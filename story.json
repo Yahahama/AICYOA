@@ -1,0 +1,22 @@
+{
+    "storyNodes": [
+        {
+            "id": "initial",
+            "text": "You are in a dark room. You can't see anything. What do you do?",
+            "choices": [
+                {
+                    "text": "Wait",
+                    "nextNode": "0"
+                },
+                {
+                    "text": "Stand up and walk",
+                    "nextNode": "1"
+                },
+                {
+                    "text": "Scream",
+                    "nextNode": "2"
+                }
+            ]
+        }
+    ]
+}
