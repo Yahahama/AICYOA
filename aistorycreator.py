@@ -13,10 +13,11 @@ with open(storypath, "r") as file:
 
 print("Story loaded!")
 
-system_template = "An uncompleted choose-your-own-adventure interactive story that needs to be filled in with story when a colon is followed by nothing. For example, 'Choice 1: {fill in story after colon'"
-prompt_template = "{0}\Choice " + str(currentChoiceToFillOut) + ": "
+system_template = "An uncompleted choose-your-own-adventure interactive story that needs to be filled in with story. Fill in only the first empty choice. For example, if Choice 0 and Choice 1 are empty, fill in only Choice 0."
+prompt_template = "{0}\nChoice " + str(currentChoiceToFillOut) + ": "
+
+print(prompt_template.format(storydata["storyNodes"][0]["text"]))
 
 with model.chat_session(system_template, prompt_template):
-    print(storydata["storyNodes"][0]["text"])
     response = model.generate(storydata["storyNodes"][0]["text"])
     print(response)
