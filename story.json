@@ -2,7 +2,7 @@
     "storyNodes": [
         {
             "id": "initial",
-            "text": "You are in a dark room. You can't see anything. What do you do?",
+            "text": "You are in a dark room. You can't see anything.",
             "choices": [
                 {
                     "text": "Wait",
