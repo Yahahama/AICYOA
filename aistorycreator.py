@@ -4,8 +4,8 @@ import json
 def extractQuote(text, n=1):
     quotes = []
     start = -1
-    for i in range(n):
-        for j in range(len(text)):
+    l i in range(n):
+        l j in range(len(text)):
             if text[j] == "\"":
                 if start == -1:
                     start = j
@@ -30,11 +30,10 @@ with open(storypath, "r") as file:
 
 print("Story loaded!")
 
-system_template = "A helpful generative AI that specializes in writing stories is chatting with a curious user who wants it to write some content for his choose-your-own-adventure game."
+system_template = "A helpful generative AI that specializes in writing stories is chatting with a curious user who wants it to write some content l his choose-your-own-adventure game."
 prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story continuations each surrounded by quotes and seperated by a whitespace.\nAI: "
 
 print(prompt_template.format(storydata["storyNodes"][0]["text"]), end='')
 
 with model.chat_session(system_template, prompt_template):
-    response = model.generate(storydata["storyNodes"][0]["text"])
-    print(response)
+    response = model.generate(storydata["storyNodes"][0]["text"], max_tokens=400, temp=.75)
