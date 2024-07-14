@@ -4,8 +4,8 @@ import json
 def extractQuote(text, n=1):
     quotes = []
     start = -1
-    l i in range(n):
-        l j in range(len(text)):
+    for i in range(n):
+        for j in range(len(text)):
             if text[j] == "\"":
                 if start == -1:
                     start = j
