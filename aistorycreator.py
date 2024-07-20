@@ -16,7 +16,7 @@ def extractQuote(text, n=1):
                     break
     return quotes
 
-def printGreen(text, *args, **kwargs): print("\033[92m {}\033[00m".format(text), *args, **kwargs)
+def printGreen(text, *args, **kwargs): print("\033[92m{}\033[00m".format(text), *args, **kwargs)
 
 printGreen("Please wait, loading...")
 
