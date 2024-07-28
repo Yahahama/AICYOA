@@ -1,5 +1,1 @@
-{
-    "storyNodes": [
-        
-    ]
-}
+{"text": "\"Your vision clears\"", "choices": [{"text": "\"Feel around for a door\"", "nextNodeID": "20"}, {"text": "\"Shout for help\"", "nextNodeID": "21"}, {"text": "\"Wait for your eyes to adjust.\"", "nextNodeID": "22"}]}
