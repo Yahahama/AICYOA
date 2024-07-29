@@ -41,7 +41,9 @@ printGreen("Model loaded!")
 
 storypath = os.path.join(os.path.dirname(__file__), "story.json")
 
-storydata = {}
+storydata = {
+    "storyNodes": []
+}
 
 printGreen("JSON loaded!")
 
@@ -61,24 +63,25 @@ printGreen("Generating story. This may take a while.")
 
 system_template = "A helpful generative AI that specializes in writing stories is chatting with a curious user who wants it to write some content l his choose-your-own-adventure game."
 
-def createStory(id='', genStories=[]):
-    newNode.update(id)
+def createStory(id='', prevGenStories=[]):
+    newNode = {}
+    newNode.update({"id": id})
     currentDepth = len(id)
     if currentDepth >= depth: return
     if currentDepth == depth - 1:
         prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story conclusions each surrounded by quotes and seperated by a whitespace.\nAI: "
     else:
         prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story continuations each surrounded by quotes and seperated by a whitespace.\nAI: "
-    newNode = {}
     with model.chat_session(system_template, prompt_template):
         if currentDepth == 0:
             newNode.update({"text": initialStory})
         else:
-            newNode.update({"text": genStories[int(id[-1])]})
+            newNode.update({"text": prevGenStories[-1][int(id[-1])]})
         if currentDepth < depth - 1:
             response = model.generate(initialStory, max_tokens=400, temp=.75)
             genChoices = extractQuote(response, 6)[:3]
             genStories = extractQuote(response, 6)[3:]
+            prevGenStories.append(genStories)
             newNode.update({"choices": [
                 {
                     "text": genChoices[0],
@@ -93,7 +96,7 @@ def createStory(id='', genStories=[]):
                     "nextNodeID": id + '2'
                 }
             ]})
-    storydata.update(newNode)
+    storydata["storyNodes"].append(newNode)
     createStory(id + '0', genStories)
     createStory(id + '1', genStories)
     createStory(id + '2', genStories)

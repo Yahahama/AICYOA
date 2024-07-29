@@ -1,1 +1,1 @@
-{"text": "\"Your vision clears\"", "choices": [{"text": "\"Feel around for a door\"", "nextNodeID": "20"}, {"text": "\"Shout for help\"", "nextNodeID": "21"}, {"text": "\"Wait for your eyes to adjust.\"", "nextNodeID": "22"}]}
+{"id": "2", "text": "\"A blurry memory flashes through your mind: you were experimenting with an old artifact that transported you here.\"", "choices": [{"text": "\"Feel around the room.\"", "nextNodeID": "0"}, {"text": "\"Shout for help.\"", "nextNodeID": "1"}, {"text": "\"Try to remember how you got here.\"", "nextNodeID": "2"}]}
