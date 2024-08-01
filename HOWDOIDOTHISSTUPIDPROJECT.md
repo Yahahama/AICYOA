@@ -22,7 +22,7 @@ Update
 
   Now, I need to get this flow as the end result:
 
-  - User is asked in the terminal to input the number of layers deep to go for the CYOA, keeping in mind that the AI will be prompted 3^n times
+  - User is asked in the terminal to input the number of layers deep to go for the CYOA, keeping in mind that the AI will be prompted 3^(n-1) times
   - User is asked what they want to call their JSON file
   - User is asked to type in what the opening scenario is (and informed that it'll use a default one if left blank)
   - AI takes forever to generate, but some form of progress is shown

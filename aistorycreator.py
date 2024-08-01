@@ -1,7 +1,6 @@
 from gpt4all import GPT4All
 import json
 from sys import platform
-from time import sleep
 import os
 
 def extractQuote(text, n=1):
@@ -68,38 +67,39 @@ def createStory(id='', prevGenStories=[]):
     newNode.update({"id": id})
     currentDepth = len(id)
     if currentDepth >= depth: return
-    if currentDepth == depth - 1:
+    if currentDepth == depth - 1:  # If we're at final depth, prompt attempts to generate conclusions rather than continuations
         prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story conclusions each surrounded by quotes and seperated by a whitespace.\nAI: "
     else:
         prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story continuations each surrounded by quotes and seperated by a whitespace.\nAI: "
     with model.chat_session(system_template, prompt_template):
         if currentDepth == 0:
             newNode.update({"text": initialStory})
+            response = model.generate(initialStory, max_tokens=400, temp=.75)
         else:
             newNode.update({"text": prevGenStories[-1][int(id[-1])]})
-        if currentDepth < depth - 1:
-            response = model.generate(initialStory, max_tokens=400, temp=.75)
-            genChoices = extractQuote(response, 6)[:3]
-            genStories = extractQuote(response, 6)[3:]
-            prevGenStories.append(genStories)
-            newNode.update({"choices": [
-                {
-                    "text": genChoices[0],
-                    "nextNodeID": id + '0'
-                },
-                {
-                    "text": genChoices[1],
-                    "nextNodeID": id + '1'
-                },
-                {
-                    "text": genChoices[2],
-                    "nextNodeID": id + '2'
-                }
-            ]})
+            response = model.generate(prevGenStories[-1][int(id[-1])], max_tokens=400, temp=.75)
+        genChoices = extractQuote(response, 6)[:3]
+        genStories = extractQuote(response, 6)[3:]
+        prevGenStories.append(genStories)
+        newNode.update({"choices": [
+            {
+                "text": genChoices[0],
+                "nextNodeID": id + '0'
+            },
+            {
+                "text": genChoices[1],
+                "nextNodeID": id + '1'
+            },
+            {
+                "text": genChoices[2],
+                "nextNodeID": id + '2'
+            }
+        ]})
     storydata["storyNodes"].append(newNode)
-    createStory(id + '0', genStories)
-    createStory(id + '1', genStories)
-    createStory(id + '2', genStories)
+    if currentDepth < depth - 1:
+        createStory(id + '0', prevGenStories)
+        createStory(id + '1', prevGenStories)
+        createStory(id + '2', prevGenStories)
 
 createStory()
 

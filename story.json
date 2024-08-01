@@ -1,1 +1,76 @@
-{"id": "2", "text": "\"A blurry memory flashes through your mind: you were experimenting with an old artifact that transported you here.\"", "choices": [{"text": "\"Feel around the room.\"", "nextNodeID": "0"}, {"text": "\"Shout for help.\"", "nextNodeID": "1"}, {"text": "\"Try to remember how you got here.\"", "nextNodeID": "2"}]}
+{
+    "storyNodes": [
+        {
+            "id": "",
+            "text": "You are in a dark room. You can't see anything.",
+            "choices": [
+                {
+                    "text": "\"Feel around the room\"",
+                    "nextNodeID": "0"
+                },
+                {
+                    "text": "\"Shout for help\"",
+                    "nextNodeID": "1"
+                },
+                {
+                    "text": "\"Wait for your eyes to adjust.\"",
+                    "nextNodeID": "2"
+                }
+            ]
+        },
+        {
+            "id": "0",
+            "text": "\"Use the door handle to open the door\"",
+            "choices": [
+                {
+                    "text": "\"Feel around for a door or window.\"",
+                    "nextNodeID": "00"
+                },
+                {
+                    "text": "\"Shout out to see if anyone is nearby.\"",
+                    "nextNodeID": "01"
+                },
+                {
+                    "text": "\"Wait quietly in case there's danger present.\"",
+                    "nextNodeID": "02"
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "text": "\"You hear footsteps approaching but no one responds to your shouts.\"",
+            "choices": [
+                {
+                    "text": "\"Feel around for a door or window.\"",
+                    "nextNodeID": "10"
+                },
+                {
+                    "text": "\"Shout to see if anyone is nearby.\"",
+                    "nextNodeID": "11"
+                },
+                {
+                    "text": "\"Wait patiently in the darkness.\"",
+                    "nextNodeID": "12"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "text": "\"The darkness reveals an object that you can use as a weapon.\"",
+            "choices": [
+                {
+                    "text": "\"Feel around for a door or window.\"",
+                    "nextNodeID": "20"
+                },
+                {
+                    "text": "\"Shout for help.\"",
+                    "nextNodeID": "21"
+                },
+                {
+                    "text": "\"Wait patiently for your eyes to adjust.\"",
+                    "nextNodeID": "22"
+                }
+            ]
+        }
+    ]
+}
