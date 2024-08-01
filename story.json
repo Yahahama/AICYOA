@@ -5,69 +5,69 @@
             "text": "You are in a dark room. You can't see anything.",
             "choices": [
                 {
-                    "text": "\"Feel around the room\"",
+                    "text": "\"Feel around the room.\"",
                     "nextNodeID": "0"
                 },
                 {
-                    "text": "\"Shout for help\"",
+                    "text": "\"Shout for help.\"",
                     "nextNodeID": "1"
                 },
                 {
-                    "text": "\"Wait for your eyes to adjust.\"",
+                    "text": "\"Try to remember how you got here.\"",
                     "nextNodeID": "2"
                 }
             ]
         },
         {
             "id": "0",
-            "text": "\"Use the door handle to open the door\"",
+            "text": "\"You feel around the wall next to you and find a door handle.\"",
             "choices": [
                 {
-                    "text": "\"Feel around for a door or window.\"",
+                    "text": "\"Open the door.\"",
                     "nextNodeID": "00"
                 },
                 {
-                    "text": "\"Shout out to see if anyone is nearby.\"",
+                    "text": "\"Push the handle harder to see if it's locked.\"",
                     "nextNodeID": "01"
                 },
                 {
-                    "text": "\"Wait quietly in case there's danger present.\"",
+                    "text": "\"Ignore the door and continue down the hallway.\"",
                     "nextNodeID": "02"
                 }
             ]
         },
         {
             "id": "1",
-            "text": "\"You hear footsteps approaching but no one responds to your shouts.\"",
+            "text": "\"The handle doesn't budge; it seems to be locked from the other side. You hear faint whispers coming from outside the door. You decide to listen closer in hopes of understanding what they are saying.\"",
             "choices": [
                 {
-                    "text": "\"Feel around for a door or window.\"",
+                    "text": "\"You hear them mentioning a secret code that unlocks the door.\"",
                     "nextNodeID": "10"
                 },
                 {
-                    "text": "\"Shout to see if anyone is nearby.\"",
+                    "text": "\"The whispers grow louder as you realize they're talking about you!\"",
                     "nextNodeID": "11"
                 },
                 {
-                    "text": "\"Wait patiently in the darkness.\"",
+                    "text": "\"Suddenly, the voices fade away, leaving you in silence.\"",
                     "nextNodeID": "12"
                 }
             ]
         },
         {
             "id": "2",
-            "text": "\"The darkness reveals an object that you can use as a weapon.\"",
+            "text": "\"\"",
             "choices": [
                 {
-                    "text": "\"Feel around for a door or window.\"",
+                    "text": "\"Option A - Follow the path to the left\"",
                     "nextNodeID": "20"
                 },
                 {
-                    "text": "\"Shout for help.\"",
+                    "text": "\"Option B - Search for clues in the room\"",
                     "nextNodeID": "21"
                 },
                 {
-                    "text": "\"Wait patiently for your eyes to adjust.\"",
+                    "text": "\"Option C - Ask the mysterious figure for help\"",
                     "nextNodeID": "22"
                 }
             ]
