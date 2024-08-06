@@ -13,64 +13,100 @@
                     "nextNodeID": "1"
                 },
                 {
-                    "text": "\"Try to remember how you got here.\"",
+                    "text": "\"Wait patiently.\"",
                     "nextNodeID": "2"
                 }
             ]
         },
         {
             "id": "0",
-            "text": "\"You feel around the wall next to you and find a door handle.\"",
+            "text": "\"You feel something hard and smooth on the wall to your right. It seems like it could be a switch or lever of some kind.\"",
             "choices": [
                 {
-                    "text": "\"Open the door.\"",
+                    "text": "\"You pull on the switch or lever, and suddenly the room is flooded with light.\"",
                     "nextNodeID": "00"
                 },
                 {
-                    "text": "\"Push the handle harder to see if it's locked.\"",
+                    "text": "\"You poke at it gingerly, but nothing happens.\"",
                     "nextNodeID": "01"
                 },
                 {
-                    "text": "\"Ignore the door and continue down the hallway.\"",
+                    "text": "\"Feeling brave, you give it a good yank - and hear a loud rumble from behind the wall!\"",
                     "nextNodeID": "02"
                 }
             ]
         },
         {
+            "id": "00",
+            "text": "\"The room reveals an ancient treasure trove hidden for centuries. You grab some of the glittering jewels before continuing on your adventure.\""
+        },
+        {
+            "id": "01",
+            "text": "\"You find out that this was just a decorative element, but it leads you to another path with more challenges ahead.\""
+        },
+        {
+            "id": "02",
+            "text": "\"A secret passage opens up behind the wall, leading you deep into an unknown part of the castle. Will you follow it and see what lies beyond?\""
+        },
+        {
             "id": "1",
-            "text": "\"The handle doesn't budge; it seems to be locked from the other side. You hear faint whispers coming from outside the door. You decide to listen closer in hopes of understanding what they are saying.\"",
+            "text": "\"No one answers, but you hear distant footsteps approaching.\"",
             "choices": [
                 {
-                    "text": "\"You hear them mentioning a secret code that unlocks the door.\"",
+                    "text": "\"You decide to hide behind a nearby bush.\"",
                     "nextNodeID": "10"
                 },
                 {
-                    "text": "\"The whispers grow louder as you realize they're talking about you!\"",
+                    "text": "\"You start running in the opposite direction.\"",
                     "nextNodeID": "11"
                 },
                 {
-                    "text": "\"Suddenly, the voices fade away, leaving you in silence.\"",
+                    "text": "\"You call out into the darkness.\"",
                     "nextNodeID": "12"
                 }
             ]
         },
         {
+            "id": "10",
+            "text": "\"As you peek over the bush, you see that the footsteps have stopped. You wait for a moment before cautiously approaching the source of the sound and find it was just an old man walking his dog.\""
+        },
+        {
+            "id": "11",
+            "text": "\"After running for what feels like miles, you come across a small cabin in the woods. Knocking on the door, you're greeted by an elderly woman who invites you inside to escape the storm that has suddenly begun.\""
+        },
+        {
+            "id": "12",
+            "text": "\"The footsteps grow louder and closer until they stop right outside of where you are standing. A deep voice calls out your name, revealing it was a friend who had been searching for you after getting separated during the hike.\""
+        },
+        {
             "id": "2",
-            "text": "\"\"",
+            "text": "\"After waiting for what feels like hours, you suddenly see a faint light in the distance.\"",
             "choices": [
                 {
-                    "text": "\"Option A - Follow the path to the left\"",
+                    "text": "\"Investigate the light\"",
                     "nextNodeID": "20"
                 },
                 {
-                    "text": "\"Option B - Search for clues in the room\"",
+                    "text": "\"Approach the light directly\"",
                     "nextNodeID": "21"
                 },
                 {
-                    "text": "\"Option C - Ask the mysterious figure for help\"",
+                    "text": "\"Ignore the light entirely\"",
                     "nextNodeID": "22"
                 }
             ]
+        },
+        {
+            "id": "20",
+            "text": "\"Deciphering the symbols\""
+        },
+        {
+            "id": "21",
+            "text": "\"Accepting the wish\""
+        },
+        {
+            "id": "22",
+            "text": "\"Celebrating the birthday\""
         }
     ]
 }

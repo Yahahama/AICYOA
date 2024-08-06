@@ -45,7 +45,7 @@ storydata = {
     "storyNodes": []
 }
 
-printGreen("JSON loaded!")
+printGreen("JSON found!")
 
 printGreen("What would you like the initial scenario to be? (Leave blank for the default scenario):")
 # currentStory = input()
@@ -96,12 +96,11 @@ def createStory(id='', prevGenStories=[]):
                 }
             ]})
     storydata["storyNodes"].append(newNode)
-    if id == '2':  # REMOVE ONCE DONE TESTING
-        pass
     if currentDepth < finalDepth:
         createStory(id + '0', prevGenStories)
         createStory(id + '1', prevGenStories)
         createStory(id + '2', prevGenStories)
+        prevGenStories.pop()
 
 createStory()
 
