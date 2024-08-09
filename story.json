@@ -1,112 +1,110 @@
-{
-    "storyNodes": [
-        {
-            "id": "",
-            "text": "You are in a dark room. You can't see anything.",
-            "choices": [
-                {
-                    "text": "\"Feel around the room.\"",
-                    "nextNodeID": "0"
-                },
-                {
-                    "text": "\"Shout for help.\"",
-                    "nextNodeID": "1"
-                },
-                {
-                    "text": "\"Wait patiently.\"",
-                    "nextNodeID": "2"
-                }
-            ]
-        },
-        {
-            "id": "0",
-            "text": "\"You feel something hard and smooth on the wall to your right. It seems like it could be a switch or lever of some kind.\"",
-            "choices": [
-                {
-                    "text": "\"You pull on the switch or lever, and suddenly the room is flooded with light.\"",
-                    "nextNodeID": "00"
-                },
-                {
-                    "text": "\"You poke at it gingerly, but nothing happens.\"",
-                    "nextNodeID": "01"
-                },
-                {
-                    "text": "\"Feeling brave, you give it a good yank - and hear a loud rumble from behind the wall!\"",
-                    "nextNodeID": "02"
-                }
-            ]
-        },
-        {
-            "id": "00",
-            "text": "\"The room reveals an ancient treasure trove hidden for centuries. You grab some of the glittering jewels before continuing on your adventure.\""
-        },
-        {
-            "id": "01",
-            "text": "\"You find out that this was just a decorative element, but it leads you to another path with more challenges ahead.\""
-        },
-        {
-            "id": "02",
-            "text": "\"A secret passage opens up behind the wall, leading you deep into an unknown part of the castle. Will you follow it and see what lies beyond?\""
-        },
-        {
-            "id": "1",
-            "text": "\"No one answers, but you hear distant footsteps approaching.\"",
-            "choices": [
-                {
-                    "text": "\"You decide to hide behind a nearby bush.\"",
-                    "nextNodeID": "10"
-                },
-                {
-                    "text": "\"You start running in the opposite direction.\"",
-                    "nextNodeID": "11"
-                },
-                {
-                    "text": "\"You call out into the darkness.\"",
-                    "nextNodeID": "12"
-                }
-            ]
-        },
-        {
-            "id": "10",
-            "text": "\"As you peek over the bush, you see that the footsteps have stopped. You wait for a moment before cautiously approaching the source of the sound and find it was just an old man walking his dog.\""
-        },
-        {
-            "id": "11",
-            "text": "\"After running for what feels like miles, you come across a small cabin in the woods. Knocking on the door, you're greeted by an elderly woman who invites you inside to escape the storm that has suddenly begun.\""
-        },
-        {
-            "id": "12",
-            "text": "\"The footsteps grow louder and closer until they stop right outside of where you are standing. A deep voice calls out your name, revealing it was a friend who had been searching for you after getting separated during the hike.\""
-        },
-        {
-            "id": "2",
-            "text": "\"After waiting for what feels like hours, you suddenly see a faint light in the distance.\"",
-            "choices": [
-                {
-                    "text": "\"Investigate the light\"",
-                    "nextNodeID": "20"
-                },
-                {
-                    "text": "\"Approach the light directly\"",
-                    "nextNodeID": "21"
-                },
-                {
-                    "text": "\"Ignore the light entirely\"",
-                    "nextNodeID": "22"
-                }
-            ]
-        },
-        {
-            "id": "20",
-            "text": "\"Deciphering the symbols\""
-        },
-        {
-            "id": "21",
-            "text": "\"Accepting the wish\""
-        },
-        {
-            "id": "22",
-            "text": "\"Celebrating the birthday\""
-        }
-    ]
-}
+[
+    {
+        "id": "",
+        "text": "You are in a dark room. You can't see anything.",
+        "choices": [
+            {
+                "text": "\"Feel around for a door\"",
+                "nextNodeID": "0"
+            },
+            {
+                "text": "\"Shout for help\"",
+                "nextNodeID": "1"
+            },
+            {
+                "text": "\"Wait for your eyes to adjust.\"",
+                "nextNodeID": "2"
+            }
+        ]
+    },
+    {
+        "id": "0",
+        "text": "\"You find a door and open it, revealing a dimly lit hallway.\"",
+        "choices": [
+            {
+                "text": "\"Explore the hallway.\"",
+                "nextNodeID": "00"
+            },
+            {
+                "text": "\"Check for traps or hidden mechanisms.\"",
+                "nextNodeID": "01"
+            },
+            {
+                "text": "\"Quickly close the door behind you.\"",
+                "nextNodeID": "02"
+            }
+        ]
+    },
+    {
+        "id": "00",
+        "text": "\"You explore the hallway and find a locked door at the end. A note on the ground reads 'The key is in room B4.' You continue down the hallway and come across another door with a glowing green symbol above it. As you approach, the door opens automatically and reveals a hidden chamber filled with treasure.\""
+    },
+    {
+        "id": "01",
+        "text": "\"You check for traps or hidden mechanisms and find that there are pressure plates along the floor of the hallway. Carefully avoiding them, you make your way to the end of the hallway where you discover a secret room containing an ancient artifact.\""
+    },
+    {
+        "id": "02",
+        "text": "\"You quickly close the door behind you and hear muffled voices outside. You realize that you've inadvertently locked yourself inside this dimly lit hallway. As you turn around, you notice a small key on the ground next to the door you just closed. With relief, you pick it up and use it to unlock the original door.\""
+    },
+    {
+        "id": "1",
+        "text": "\"No one responds to your cries for help, but you hear the distant sound of water dripping.\"",
+        "choices": [
+            {
+                "text": "\"Investigate the source of the dripping sound.\"",
+                "nextNodeID": "10"
+            },
+            {
+                "text": "\"Shout for help again.\"",
+                "nextNodeID": "11"
+            },
+            {
+                "text": "\"Wait quietly to see if anyone approaches.\"",
+                "nextNodeID": "12"
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "text": "\"You discover an underground waterfall, its beauty soothing your fear.\""
+    },
+    {
+        "id": "11",
+        "text": "\"No one responds to your second call for help, but you hear a rustling in the bushes nearby.\""
+    },
+    {
+        "id": "12",
+        "text": "\"A group of adventurers appears out of nowhere and rescues you from danger.\""
+    },
+    {
+        "id": "2",
+        "text": "\"After waiting in silence, you slowly begin to make out shapes in the room as your eyes adjust to the darkness.\"",
+        "choices": [
+            {
+                "text": "\"Turn on your flashlight.\"",
+                "nextNodeID": "20"
+            },
+            {
+                "text": "\"Shout for help.\"",
+                "nextNodeID": "21"
+            },
+            {
+                "text": "\"Feel around the room with your hands.\"",
+                "nextNodeID": "22"
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "text": "\"\""
+    },
+    {
+        "id": "21",
+        "text": "\"\""
+    },
+    {
+        "id": "22",
+        "text": "\"\""
+    }
+]

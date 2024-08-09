@@ -41,9 +41,7 @@ printGreen("Model loaded!")
 
 storypath = os.path.join(os.path.dirname(__file__), "story.json")
 
-storydata = {
-    "storyNodes": []
-}
+storydata = []
 
 printGreen("JSON found!")
 
@@ -95,7 +93,7 @@ def createStory(id='', prevGenStories=[]):
                     "nextNodeID": id + '2'
                 }
             ]})
-    storydata["storyNodes"].append(newNode)
+    storydata.append(newNode)
     if currentDepth < finalDepth:
         createStory(id + '0', prevGenStories)
         createStory(id + '1', prevGenStories)
