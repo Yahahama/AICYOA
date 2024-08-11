@@ -32,13 +32,13 @@ updateScreen();
 
 addEventListener('click', function (event) {
     if (event.target === choice0) {
-        currentID = storyData[currentID].choices[0].nextID;
+        currentID = storyData[currentID].choices[0].nextNode;
         updateScreen();
     } else if (event.target === choice1) {
-        currentID = storyData[currentID].choices[1].nextID;
+        currentID = storyData[currentID].choices[1].nextNode;
         updateScreen();
     } else if (event.target === choice2) {
-        currentID = storyData[currentID].choices[2].nextID;
+        currentID = storyData[currentID].choices[2].nextNode;
         updateScreen();
     }
 })
