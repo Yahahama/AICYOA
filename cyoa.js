@@ -18,10 +18,10 @@ fetch(storyURL)
         console.error('Error loading story.json:', error);
     });
 
-text = document.getElementById('text');
-choice0 = document.getElementById('choice0');
-choice1 = document.getElementById('choice1');
-choice2 = document.getElementById('choice2');
+const text = document.getElementById('text');
+const choice0 = document.getElementById('choice0');
+const choice1 = document.getElementById('choice1');
+const choice2 = document.getElementById('choice2');
 
 function updateScreen() {
     console.log("updateScreen called, base10ID: " + base10ID);
@@ -37,13 +37,13 @@ function updateScreen() {
 addEventListener('click', function (event) {
     console.log("addEventListener called, base10ID: " + base10ID);
     if (event.target === choice0) {
-        currentID = storyData[base10ID].choices[0].nextNode;
+        currentID = storyData[base10ID].choices[0].nextNodeID;
         updateScreen();
     } else if (event.target === choice1) {
-        currentID = storyData[base10ID].choices[1].nextNode;
+        currentID = storyData[base10ID].choices[1].nextNodeID;
         updateScreen();
     } else if (event.target === choice2) {
-        currentID = storyData[base10ID].choices[2].nextNode;
+        currentID = storyData[base10ID].choices[2].nextNodeID;
         updateScreen();
     }
 })
