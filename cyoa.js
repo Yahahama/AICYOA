@@ -1,9 +1,9 @@
 let currentID = '';
 let storyData = null;
+let base10ID = null;
 const storyURL = "https://yahahama.github.io/AICYOA/story.json";
 
 addEventListener('click', function (event) {
-    console.log(base10ID);
     if (event.target === choice0) {
         currentID = storyData[base10ID].choices[0].nextNode;
         updateScreen();
@@ -47,4 +47,3 @@ function updateScreen() {
     choice1.innerHTML = storyData[base10ID].choices[1].text;
     choice2.innerHTML = storyData[base10ID].choices[2].text;
 }
-console.log(base10ID);
