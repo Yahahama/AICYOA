@@ -35,7 +35,7 @@ function updateScreen() {
 }
 
 addEventListener('click', function (event) {
-    console.log(storyData);
+    console.log(base10ID);
     if (event.target === choice0) {
         currentID = storyData[base10ID].choices[0].nextNode;
         updateScreen();
