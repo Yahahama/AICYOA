@@ -28,6 +28,8 @@ function updateScreen() {
     } else {
         base10ID = parseInt(currentID, 3) + 1;
     }
+    console.log(storyData[base10ID]);
+    console.log(storyData[base10ID].text);
     text.innerHTML = storyData[base10ID].text;
     choice0.innerHTML = storyData[base10ID].choices[0].text;
     choice1.innerHTML = storyData[base10ID].choices[1].text;
