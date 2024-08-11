@@ -12,6 +12,7 @@ fetch(storyURL)
     .then(data => {
         storyData = data;
         console.log("Story loaded successfully", storyData);
+        updateScreen();
     })
     .catch(error => {
         console.error('Error loading story.json:', error);
@@ -39,9 +40,6 @@ function updateScreen() {
     choice2.innerHTML = storyData[base10ID].choices[2].text;
     console.log("updateScreen ran successfully")
 }
-
-console.log("updateScreen func passed");
-updateScreen();
 
 console.log("Got to event listener!")
 addEventListener('click', function (event) {
