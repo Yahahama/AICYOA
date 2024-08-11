@@ -11,6 +11,7 @@ fetch(storyURL)
     })
     .then(data => {
         storyData = data;
+        console.log("Story loaded successfully", storyData);
     })
     .catch(error => {
         console.error('Error loading story.json:', error);
@@ -22,15 +23,22 @@ choice1 = document.getElementById('choice1');
 choice2 = document.getElementById('choice2');
 
 function updateScreen() {
-    base10ID = parseInt(currentID, 3);
+    if (currentID === '') {
+        base10ID = 0;
+    } else {
+        base10ID = parseInt(currentID, 3) + 1;
+    }
     text.innerHTML = storyData[base10ID].text;
     choice0.innerHTML = storyData[base10ID].choices[0].text;
     choice1.innerHTML = storyData[base10ID].choices[1].text;
     choice2.innerHTML = storyData[base10ID].choices[2].text;
+    console.log("updateScreen ran successfully")
 }
 
+console.log("updateScreen func passed");
 updateScreen();
 
+console.log("Got to event listener!")
 addEventListener('click', function (event) {
     if (event.target === choice0) {
         currentID = storyData[base10ID].choices[0].nextNode;
