@@ -104,6 +104,11 @@ createStory()
 
 printGreen("Story generated!")
 
+storydata.append({
+    "depth": finalDepth,
+    "title": "Demo Title"
+    })
+
 with open(storypath, "w") as file:
     json.dump(storydata, file)
 

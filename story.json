@@ -4,107 +4,111 @@
         "text": "You are in a dark room. You can't see anything.",
         "choices": [
             {
-                "text": "\"Feel around for a door\"",
+                "text": "\"Feel around the room.\"",
                 "nextNodeID": "0"
             },
             {
-                "text": "\"Shout for help\"",
+                "text": "\"Shout for help.\"",
                 "nextNodeID": "1"
             },
             {
-                "text": "\"Wait for your eyes to adjust.\"",
+                "text": "\"Try to remember how you got here.\"",
                 "nextNodeID": "2"
             }
         ]
     },
     {
         "id": "0",
-        "text": "\"You find a door and open it, revealing a dimly lit hallway.\"",
+        "text": "\"You find a small object in your hand. It feels like a key.\"",
         "choices": [
             {
-                "text": "\"Explore the hallway.\"",
+                "text": "\"Unlock the door.\"",
                 "nextNodeID": "00"
             },
             {
-                "text": "\"Check for traps or hidden mechanisms.\"",
+                "text": "\"Ignore it for now.\"",
                 "nextNodeID": "01"
             },
             {
-                "text": "\"Quickly close the door behind you.\"",
+                "text": "\"Try to sell or trade it.\"",
                 "nextNodeID": "02"
             }
         ]
     },
     {
         "id": "00",
-        "text": "\"You explore the hallway and find a locked door at the end. A note on the ground reads 'The key is in room B4.' You continue down the hallway and come across another door with a glowing green symbol above it. As you approach, the door opens automatically and reveals a hidden chamber filled with treasure.\""
+        "text": "\"You unlock the door and find yourself in an empty room with a single window at the far end. As you approach, you notice that there's something behind the glass - a treasure chest!\""
     },
     {
         "id": "01",
-        "text": "\"You check for traps or hidden mechanisms and find that there are pressure plates along the floor of the hallway. Carefully avoiding them, you make your way to the end of the hallway where you discover a secret room containing an ancient artifact.\""
+        "text": "\"Open the chest.\""
     },
     {
         "id": "02",
-        "text": "\"You quickly close the door behind you and hear muffled voices outside. You realize that you've inadvertently locked yourself inside this dimly lit hallway. As you turn around, you notice a small key on the ground next to the door you just closed. With relief, you pick it up and use it to unlock the original door.\""
+        "text": "\"Leave the chest untouched.\""
     },
     {
         "id": "1",
-        "text": "\"No one responds to your cries for help, but you hear the distant sound of water dripping.\"",
+        "text": "\"No one answers, but you hear muffled voices and footsteps outside.\"",
         "choices": [
             {
-                "text": "\"Investigate the source of the dripping sound.\"",
+                "text": "\"You decide to investigate further.\"",
                 "nextNodeID": "10"
             },
             {
-                "text": "\"Shout for help again.\"",
+                "text": "\"You choose to hide and observe.\"",
                 "nextNodeID": "11"
             },
             {
-                "text": "\"Wait quietly to see if anyone approaches.\"",
+                "text": "\"You knock on the door to announce your presence.\"",
                 "nextNodeID": "12"
             }
         ]
     },
     {
         "id": "10",
-        "text": "\"You discover an underground waterfall, its beauty soothing your fear.\""
+        "text": "\"If you decide to investigate further, you find out that it's just some neighbors having a party. You can either join them or continue with your original mission.\""
     },
     {
         "id": "11",
-        "text": "\"No one responds to your second call for help, but you hear a rustling in the bushes nearby.\""
+        "text": "\"If you choose to hide and observe, you notice a suspicious figure lurking around the corner. After they leave, you cautiously approach the house only to discover a hidden entrance leading underground.\""
     },
     {
         "id": "12",
-        "text": "\"A group of adventurers appears out of nowhere and rescues you from danger.\""
+        "text": "\"If you knock on the door to announce your presence, the person inside invites you in for tea, but as soon as you enter their home, you realize that it's a trap and must fight off the inhabitants before escaping.\""
     },
     {
         "id": "2",
-        "text": "\"After waiting in silence, you slowly begin to make out shapes in the room as your eyes adjust to the darkness.\"",
+        "text": "\"A memory flashes back: You were exploring an old abandoned house with some friends when the power went out.\"",
         "choices": [
             {
-                "text": "\"Turn on your flashlight.\"",
+                "text": "\"Investigate the dark basement.\"",
                 "nextNodeID": "20"
             },
             {
-                "text": "\"Shout for help.\"",
+                "text": "\"Search for a way out of the house.\"",
                 "nextNodeID": "21"
             },
             {
-                "text": "\"Feel around the room with your hands.\"",
+                "text": "\"Stay with your friends in the living room.\"",
                 "nextNodeID": "22"
             }
         ]
     },
     {
         "id": "20",
-        "text": "\"\""
+        "text": "\"You descend into the dark, musty basement and find an old dust-covered journal. Reading it reveals clues to hidden treasures within the house.\""
     },
     {
         "id": "21",
-        "text": "\"\""
+        "text": "\"You stumble upon a secret door that leads you outside, allowing you to escape from the haunted house.\""
     },
     {
         "id": "22",
-        "text": "\"\""
+        "text": "\"As you huddle with your friends in fear, a ghostly apparition appears and begins speaking to you about its tragic past. You learn of an ancient curse placed on the house by a vengeful spirit.\""
+    },
+    {
+        "depth": 2,
+        "title": "Demo Title"
     }
 ]
