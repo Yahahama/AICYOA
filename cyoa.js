@@ -12,7 +12,7 @@ fetch(storyURL)
     .then(data => {
         storyData = data;
         console.log("Story loaded successfully", storyData);
-        updateScreen();
+        updateScreen(storyData);
     })
     .catch(error => {
         console.error('Error loading story.json:', error);
@@ -23,7 +23,7 @@ choice0 = document.getElementById('choice0');
 choice1 = document.getElementById('choice1');
 choice2 = document.getElementById('choice2');
 
-function updateScreen() {
+function updateScreen(storyData) {
     if (currentID === '') {
         base10ID = 0;
     } else {
@@ -45,12 +45,12 @@ console.log("Got to event listener!")
 addEventListener('click', function (event) {
     if (event.target === choice0) {
         currentID = storyData[base10ID].choices[0].nextNode;
-        updateScreen();
+        updateScreen(storyData);
     } else if (event.target === choice1) {
         currentID = storyData[base10ID].choices[1].nextNode;
-        updateScreen();
+        updateScreen(storyData);
     } else if (event.target === choice2) {
         currentID = storyData[base10ID].choices[2].nextNode;
-        updateScreen();
+        updateScreen(storyData);
     }
 })
