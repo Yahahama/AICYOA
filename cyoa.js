@@ -22,10 +22,11 @@ choice1 = document.getElementById('choice1');
 choice2 = document.getElementById('choice2');
 
 function updateScreen() {
-    text.innerHTML = storyData[currentID].text;
-    choice0.innerHTML = storyData[currentID].choices[0].text;
-    choice1.innerHTML = storyData[currentID].choices[1].text;
-    choice2.innerHTML = storyData[currentID].choices[2].text;
+    base10ID = parseInt(currentID, 3);
+    text.innerHTML = storyData[base10ID].text;
+    choice0.innerHTML = storyData[base10ID].choices[0].text;
+    choice1.innerHTML = storyData[base10ID].choices[1].text;
+    choice2.innerHTML = storyData[base10ID].choices[2].text;
 }
 
 updateScreen();
