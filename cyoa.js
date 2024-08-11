@@ -1,6 +1,6 @@
 let currentID = '';
 let storyData = null;
-let base10ID = null;
+let base10ID = 0;
 const storyURL = "https://yahahama.github.io/AICYOA/story.json";
 
 fetch(storyURL)
@@ -25,9 +25,7 @@ choice2 = document.getElementById('choice2');
 
 function updateScreen() {
     console.log("updateScreen called, base10ID: " + base10ID);
-    if (currentID === '') {
-        base10ID = 0;
-    } else {
+    if (currentID != '') {
         base10ID = parseInt(currentID, 3) + 1;
     }
     text.innerHTML = storyData[base10ID].text;
