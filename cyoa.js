@@ -28,6 +28,9 @@ function updateScreen() {
     } else {
         base10ID = parseInt(currentID, 3) + 1;
     }
+    console.log("Beginning crazy logs!")
+    console.log(base10ID);
+    console.log(storyData);
     console.log(storyData[base10ID]);
     console.log(storyData[base10ID].text);
     text.innerHTML = storyData[base10ID].text;
