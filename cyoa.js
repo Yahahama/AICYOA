@@ -19,7 +19,6 @@ fetch(storyURL)
         storyData = data;
         console.log('Story data:', storyData);
         currentNode = storyData[0];
-        console.log(storyData[0], currentNode);
         updateScreen();
     })
     .catch(error => {
@@ -55,4 +54,5 @@ addEventListener('click', function (event) {
         currentID += '2';
         updateScreen();
     }
+    console.log("currentID: "+currentID);
 })
