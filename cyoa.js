@@ -3,6 +3,11 @@ let storyData = [];
 let currentNode = {};
 const storyURL = "https://yahahama.github.io/AICYOA/story.json";
 
+const text = document.getElementById('text');
+const choice0 = document.getElementById('choice0');
+const choice1 = document.getElementById('choice1');
+const choice2 = document.getElementById('choice2');
+
 fetch(storyURL)
     .then(response => {
         if (!response.ok) {
@@ -15,17 +20,11 @@ fetch(storyURL)
         console.log('Story data:', storyData);
         currentNode = storyData[0];
         console.log("Init currentNode: "+currentNode);
+        updateScreen();
     })
     .catch(error => {
         console.error('Error loading story.json:', error);
     });
-
-console.log("currentNode: "+currentNode);
-
-const text = document.getElementById('text');
-const choice0 = document.getElementById('choice0');
-const choice1 = document.getElementById('choice1');
-const choice2 = document.getElementById('choice2');
 
 function updateScreen() {
     if (currentID != '') {
@@ -43,8 +42,6 @@ function updateScreen() {
     choice1.innerHTML = currentNode.choices[1].text;
     choice2.innerHTML = currentNode.choices[2].text;
 }
-
-updateScreen();
 
 addEventListener('click', function (event) {
     if (event.target === choice0) {
