@@ -11,12 +11,14 @@ fetch(storyURL)
     })
     .then(data => {
         storyData = data;
+        console.log('Story data:', storyData);
     })
     .catch(error => {
         console.error('Error loading story.json:', error);
     });
 
 currentNode = storyData[0];
+console.log("Init currentNode: "+currentNode);
 
 const text = document.getElementById('text');
 const choice0 = document.getElementById('choice0');
@@ -31,6 +33,9 @@ function updateScreen() {
         }
         currentNode = storyData[c];
     }
+
+    console.log("updateScreen() currentNode: "+currentNode);
+
     text.innerHTML = currentNode.text;
     choice0.innerHTML = currentNode.choices[0].text;
     choice1.innerHTML = currentNode.choices[1].text;
