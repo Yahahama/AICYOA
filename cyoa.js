@@ -29,7 +29,8 @@ fetch(storyURL)
 function updateScreen() {
     if (currentID != '') {
         nodeCount = storyData[storyData.length-1].depth;
-        for (let i = 0, c = 0; i < currentID.length; i++) {
+        let c = 0;
+        for (let i = 0; i < currentID.length; i++) {
             c += currentID[i]*nodeCount/3**i;
         }
         currentNode = storyData[c];
