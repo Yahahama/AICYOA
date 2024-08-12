@@ -12,13 +12,14 @@ fetch(storyURL)
     .then(data => {
         storyData = data;
         console.log('Story data:', storyData);
+        currentNode = storyData[0];
+        console.log("Init currentNode: "+currentNode);
     })
     .catch(error => {
         console.error('Error loading story.json:', error);
     });
 
-currentNode = storyData[0];
-console.log("Init currentNode: "+currentNode);
+console.log("currentNode: "+currentNode);
 
 const text = document.getElementById('text');
 const choice0 = document.getElementById('choice0');
@@ -27,7 +28,7 @@ const choice2 = document.getElementById('choice2');
 
 function updateScreen() {
     if (currentID != '') {
-        nodeCount = storyData[-1].depth;
+        nodeCount = storyData[storyData.length-1].depth;
         for (let i = 0, c = 0; i < currentID.length; i++) {
             c += currentID[i]*nodeCount/3**i;
         }
