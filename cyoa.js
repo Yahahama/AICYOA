@@ -11,7 +11,6 @@ fetch(storyURL)
     })
     .then(data => {
         storyData = data;
-        updateScreen();
     })
     .catch(error => {
         console.error('Error loading story.json:', error);
@@ -37,6 +36,8 @@ function updateScreen() {
     choice1.innerHTML = currentNode.choices[1].text;
     choice2.innerHTML = currentNode.choices[2].text;
 }
+
+updateScreen();
 
 addEventListener('click', function (event) {
     if (event.target === choice0) {
