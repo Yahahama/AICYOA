@@ -1,6 +1,4 @@
 let currentID = '';
-let storyData = null;
-let base10ID = 0;
 const storyURL = "https://yahahama.github.io/AICYOA/story.json";
 
 fetch(storyURL)
@@ -24,26 +22,28 @@ const choice1 = document.getElementById('choice1');
 const choice2 = document.getElementById('choice2');
 
 function updateScreen() {
-    console.log("updateScreen called, base10ID: " + base10ID);
     if (currentID != '') {
-        base10ID = parseInt(currentID, 3) + 1;
+        nodeCount = storyData[-1].depth;
+        for (let i = 0, c = 0; i < currentID.length; i++) {
+            c += currentID[i]*nodeCount/3**i;
+        }
+        currentNode = storyData[c];
     }
-    text.innerHTML = storyData[base10ID].text;
-    choice0.innerHTML = storyData[base10ID].choices[0].text;
-    choice1.innerHTML = storyData[base10ID].choices[1].text;
-    choice2.innerHTML = storyData[base10ID].choices[2].text;
+    text.innerHTML = currentNode.text;
+    choice0.innerHTML = currentNode.choices[0].text;
+    choice1.innerHTML = currentNode.choices[1].text;
+    choice2.innerHTML = currentNode.choices[2].text;
 }
 
 addEventListener('click', function (event) {
-    console.log("addEventListener called, base10ID: " + base10ID);
     if (event.target === choice0) {
-        currentID = storyData[base10ID].choices[0].nextNodeID;
+        currentID = currentNode.choices[0].nextNodeID;
         updateScreen();
     } else if (event.target === choice1) {
-        currentID = storyData[base10ID].choices[1].nextNodeID;
+        currentID = currentNode.choices[1].nextNodeID;
         updateScreen();
     } else if (event.target === choice2) {
-        currentID = storyData[base10ID].choices[2].nextNodeID;
+        currentID = currentNode.choices[2].nextNodeID;
         updateScreen();
     }
 })
