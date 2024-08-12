@@ -1,5 +1,6 @@
 let currentID = '';
 let storyData = [];
+let currentNode = {};
 const storyURL = "https://yahahama.github.io/AICYOA/story.json";
 
 fetch(storyURL)
