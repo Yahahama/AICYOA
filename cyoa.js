@@ -46,13 +46,13 @@ function updateScreen() {
 
 addEventListener('click', function (event) {
     if (event.target === choice0) {
-        currentID = currentNode.choices[0].nextNodeID;
+        currentID += '0';
         updateScreen();
     } else if (event.target === choice1) {
-        currentID = currentNode.choices[1].nextNodeID;
+        currentID += '1';
         updateScreen();
     } else if (event.target === choice2) {
-        currentID = currentNode.choices[2].nextNodeID;
+        currentID += '2';
         updateScreen();
     }
 })
