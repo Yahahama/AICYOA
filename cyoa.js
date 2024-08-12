@@ -19,7 +19,7 @@ fetch(storyURL)
         storyData = data;
         console.log('Story data:', storyData);
         currentNode = storyData[0];
-        print(storyData[0], currentNode);
+        console.log(storyData[0], currentNode);
         updateScreen();
     })
     .catch(error => {
