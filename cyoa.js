@@ -19,7 +19,7 @@ fetch(storyURL)
         storyData = data;
         console.log('Story data:', storyData);
         currentNode = storyData[0];
-        console.log("Init currentNode: "+currentNode);
+        print(storyData[0], currentNode);
         updateScreen();
     })
     .catch(error => {
@@ -28,7 +28,7 @@ fetch(storyURL)
 
 function updateScreen() {
     if (currentID != '') {
-        nodeCount = storyData[storyData.length-1].depth;
+        const nodeCount = storyData[storyData.length-1].depth;
         let c = 0;
         for (let i = 0; i < currentID.length; i++) {
             c += currentID[i]*nodeCount/3**i;
