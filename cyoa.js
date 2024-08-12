@@ -1,5 +1,4 @@
 let currentID = '';
-let currentNode = {};
 const storyURL = "https://yahahama.github.io/AICYOA/story.json";
 
 fetch(storyURL)
@@ -16,6 +15,8 @@ fetch(storyURL)
     .catch(error => {
         console.error('Error loading story.json:', error);
     });
+
+currentNode = storyData[0];
 
 const text = document.getElementById('text');
 const choice0 = document.getElementById('choice0');
