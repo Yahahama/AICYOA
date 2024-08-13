@@ -26,13 +26,11 @@ fetch(storyURL)
     });
 
 function updateScreen() {
-    if (currentID != '') {
-        const nodeCount = storyData[storyData.length-1].depth;
-        let c = 0;
-        for (let i = 0; i < currentID.length; i++) {
-            c += currentID[i]*nodeCount/3**i+1;
+    for (let i = 0; i < storyData.length; i++) {
+        if (storyData[i].id === currentID) {
+            currentNode = storyData[i];
+            break;
         }
-        currentNode = storyData[c];
     }
 
     console.log("updateScreen() currentNode: "+currentNode);
