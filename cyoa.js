@@ -39,9 +39,9 @@ function updateScreen() {
 
     if (currentID.length < storyData[storyData.length - 1].length) {
         extra.innerHTML = "The end! Your ending ID is " + currentID;
-        choice0.hidden = true;
-        choice1.hidden = true;
-        choice2.hidden = true;
+        choice0.disabled = true;
+        choice1.disabled = true;
+        choice2.disabled = true;
     } else {
         choice0.innerHTML = currentNode.choices[0].text;
         choice1.innerHTML = currentNode.choices[1].text;
@@ -62,5 +62,8 @@ addEventListener('click', function (event) {
     } else if (event.target === reset) {
         currentID = '';
         updateScreen();
+        choice0.disabled = false;
+        choice1.disabled = false;
+        choice2.disabled = false;
     }
 })
