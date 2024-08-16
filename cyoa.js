@@ -3,8 +3,6 @@ let storyData = [];
 let currentNode = {};
 const storyURL = "https://yahahama.github.io/AICYOA/story.json";
 
-// REMOVE THIS COMMENT
-
 const text = document.getElementById('text');
 const extra = document.getElementById('extra');
 const choice0 = document.getElementById('choice0');
