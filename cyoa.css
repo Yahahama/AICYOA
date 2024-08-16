@@ -36,9 +36,7 @@ button:hover {
 }
 
 button:disabled {
-    background-color: grey;
-    color: white;
-    cursor: not-allowed;
+    display: none;
 }
 
 @keyframes button-expand {
