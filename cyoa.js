@@ -37,9 +37,7 @@ function updateScreen() {
 
     text.innerHTML = currentNode.text;
 
-    console.log("currentID.length: " + currentID.length);
-    console.log("storyData[storyData.length - 1].length: " + storyData[storyData.length - 1].length);
-    if (currentID.length >= storyData[storyData.length - 1].length) {
+    if (currentID.length >= storyData[storyData.length - 1].depth) {
         extra.innerHTML = "The end! Your ending ID is " + currentID;
         choice0.disabled = true;
         choice1.disabled = true;
