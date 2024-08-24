@@ -3,6 +3,7 @@ let storyData = [];
 let currentNode = {};
 const storyURL = "https://yahahama.github.io/AICYOA/story.json";
 
+const title = document.getElementById('title');
 const text = document.getElementById('text');
 const extra = document.getElementById('extra');
 const choice0 = document.getElementById('choice0');
@@ -35,6 +36,7 @@ function updateScreen() {
         }
     }
 
+    title.innerHTML = storyData[storyData.length - 1].title;
     text.innerHTML = currentNode.text;
 
     if (currentID.length >= storyData[storyData.length - 1].depth) {
@@ -62,6 +64,7 @@ addEventListener('click', function (event) {
     } else if (event.target === reset) {
         currentID = '';
         updateScreen();
+        extra.innerHTML = "What do you do?";
         choice0.disabled = false;
         choice1.disabled = false;
         choice2.disabled = false;
