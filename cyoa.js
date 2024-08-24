@@ -20,8 +20,10 @@ fetch(storyURL)
     })
     .then(data => {
         storyData = data;
-        console.log('Story data:', storyData);
         currentNode = storyData[0];
+
+        console.log(storyData[storyData.length - 1]);
+
         updateScreen();
     })
     .catch(error => {
