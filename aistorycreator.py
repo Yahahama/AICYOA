@@ -16,6 +16,7 @@ def extractQuote(text, n=1):
                     text = text[:start] + text[j+1:]
                     start = -1
                     break
+        quotes.append('')
     return quotes
 
 def delete_last_lines(n=1): 
@@ -27,6 +28,7 @@ def delete_last_lines(n=1):
         stdout.write(CURSOR_UP_ONE)
 
 def printGreen(text, *args, **kwargs): print("\033[92m{}\033[00m".format(text), *args, **kwargs)
+def printRed(text, *args, **kwargs): print("\033[91m{}\033[00m".format(text), *args, **kwargs)
 
 printGreen("Please wait, loading...")
 
@@ -43,12 +45,10 @@ printGreen("JSON found!")
 storydata = []
 
 printGreen("What would you like the title of your story to be? (Leave blank for the default title):")
-# title = input()
-title = ""
+title = input()
 if title == "": title = "Untitled Story"
 printGreen("What would you like the initial scenario of your story to be? (Leave blank for the default scenario):")
-# currentStory = input()
-currentStory = ""
+currentStory = input()
 if currentStory == "": currentStory = "You are in a dark room. You can't see anything."
 printGreen("How many choices deep do you want your game to be? (Note: each layer deeper will take 3x as long to generate.)")
 try: finalDepth = int(input())
@@ -79,13 +79,20 @@ def createStory(id='', prevGenStories=[]):
         else:
             prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story continuations each surrounded by quotes and seperated by a whitespace.\nAI: "
         if currentDepth == finalDepth:
-            printGreen("Generating choices for node %s" % (id if id else "intro"))
-        else:
             printGreen("Creating conclusion %s" % id)
+        else:
+            printGreen("Generating choices for node %s" % (id if id else "intro"))
         with model.chat_session(system_template, prompt_template):
-            response = model.generate(currentStory, max_tokens=400, temp=.75)
-            genChoices = extractQuote(response, 6)[:3]
-            genStories = extractQuote(response, 6)[3:]
+            genStories = None
+            genChoices = None
+            def generateText():
+                response = model.generate(currentStory, max_tokens=400, temp=.75)
+                genChoices = extractQuote(response, 6)[:3]
+                genStories = extractQuote(response, 6)[3:]
+                for quotedText in extractQuote(response, 6):
+                    if quotedText == '':
+                        printRed("Incomplete response generated! Retrying node %s" % id)
+                        generateText()
             prevGenStories.append(genStories)
             newNode.update({"choices": [
                 {
