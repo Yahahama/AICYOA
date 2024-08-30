@@ -13,7 +13,7 @@ def extractQuote(text, n=1):
                 if start == -1:
                     start = j
                 else:
-                    quotes.append(text[start:j+1])
+                    quotes.append(text[start+1:j])
                     text = text[:start] + text[j+1:]
                     start = -2
                     break
@@ -78,9 +78,9 @@ def createStory(id='', prevGenStories=[]):
     if currentDepth != finalDepth:
         # If we're at second-to-last depth, prompt attempts to generate conclusions rather than continuations
         if currentDepth == finalDepth - 1:
-            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story conclusions each surrounded by quotes and seperated by a whitespace. Use this form: CHOICES: \"\" \"\" \"\" STORIES: \"\" \"\" \"\"\nAI: "
+            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story conclusions each surrounded by quotes and seperated by a whitespace. Use this form, making sure to fill in the quotation marks with real content: CHOICES: \"\" \"\" \"\" STORIES: \"\" \"\" \"\"\nAI: "
         else:
-            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story continuations each surrounded by quotes and seperated by a whitespace. Use this form: CHOICES: \"\" \"\" \"\" CONCLUSIONS: \"\" \"\" \"\"\nAI: "
+            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story continuations each surrounded by quotes and seperated by a whitespace. Use this form, making sure to fill in the quotation marks with real content: CHOICES: \"\" \"\" \"\" CONCLUSIONS: \"\" \"\" \"\"\nAI: "
         printGreen("Generating node with ID \"%s\"" % id)
         with model.chat_session(system_template, prompt_template):
             genChoices = []

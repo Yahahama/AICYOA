@@ -1,348 +1,114 @@
 [
     {
         "id": "",
-        "text": "You wake up on a beach with only a butter knife, two thick wooly socks, and a beat-up set of clothes. An ant the size of a horse turns its massive head to see you and begins to charge!",
+        "text": "You are in a dark room. You can't see anything.",
         "choices": [
             {
-                "text": "\"Find shelter in the nearby cave\"",
+                "text": "\"Feel around the room\"",
                 "nextNodeID": "0"
             },
             {
-                "text": "\"Fight the ant with your butter knife\"",
+                "text": "\"Shout for help\"",
                 "nextNodeID": "1"
             },
             {
-                "text": "\"Run towards the sound of the ocean\"",
+                "text": "\"Wait for your eyes to adjust\"",
                 "nextNodeID": "2"
             }
         ]
     },
     {
         "id": "0",
-        "text": "\"You find a hidden cave painting that reveals the origin of the giant ants. You sneak past the sleeping giant ant and make it to safety.\"",
+        "text": "\"You find a door handle.\"",
         "choices": [
             {
-                "text": "\"Explore the cave further\"",
+                "text": "\"Open the door\"",
                 "nextNodeID": "00"
             },
             {
-                "text": "\"Search for more information about giant ants\"",
+                "text": "\"Push the handle\"",
                 "nextNodeID": "01"
             },
             {
-                "text": "\"Avoid the ant hill altogether\"",
+                "text": "\"Ignore it\"",
                 "nextNodeID": "02"
             }
         ]
     },
     {
         "id": "00",
-        "text": "\"You discover a secret entrance to another part of the cave.\"",
-        "choices": [
-            {
-                "text": "\"Explore the passage to the left\"",
-                "nextNodeID": "000"
-            },
-            {
-                "text": "\"Search for hidden clues in the room\"",
-                "nextNodeID": "001"
-            },
-            {
-                "text": "\"Ask your companion about the entrance\"",
-                "nextNodeID": "002"
-            }
-        ]
-    },
-    {
-        "id": "000",
-        "text": "\"You find a map leading deeper into the cave.\""
-    },
-    {
-        "id": "001",
-        "text": "\"You uncover a secret message revealing an ancient prophecy.\""
-    },
-    {
-        "id": "002",
-        "text": "\"Your companion explains that this is the way to the lost city of El Dorado.\""
+        "text": "\"You enter a dimly lit room filled with dusty antiques.\""
     },
     {
         "id": "01",
-        "text": "\"You learn that the ants were created by a mad scientist in a failed experiment.\"",
-        "choices": [
-            {
-                "text": "\"Investigate the lab where the experiment took place\"",
-                "nextNodeID": "010"
-            },
-            {
-                "text": "\"Follow the trail of ants to find their nest\"",
-                "nextNodeID": "011"
-            },
-            {
-                "text": "\"Search for any remaining notes or documents about the scientist's work\"",
-                "nextNodeID": "012"
-            }
-        ]
-    },
-    {
-        "id": "010",
-        "text": "\"You discover a secret formula that could help you create your own super-ants.\""
-    },
-    {
-        "id": "011",
-        "text": "\"The ants lead you to a hidden treasure, but it comes with consequences.\""
-    },
-    {
-        "id": "012",
-        "text": "\"You learn enough from the documents to stop the spread of the mutated ants and save the town.\""
+        "text": "\"The door leads you to an empty hallway.\""
     },
     {
         "id": "02",
-        "text": "\"The ants follow your scent, but you manage to evade them and reach safety.\"",
-        "choices": [
-            {
-                "text": "\"Follow the scent of flowers to distract the ants.\"",
-                "nextNodeID": "020"
-            },
-            {
-                "text": "\"Climb up the nearest tree.\"",
-                "nextNodeID": "021"
-            },
-            {
-                "text": "\"Lay low in tall grass until they lose interest.\"",
-                "nextNodeID": "022"
-            }
-        ]
-    },
-    {
-        "id": "020",
-        "text": "\"You follow the scent of flowers, and as you do so, the ants are drawn away from your position. You make a break for it and reach safety.\""
-    },
-    {
-        "id": "021",
-        "text": "\"As you climb higher into the tree, the ants give up pursuing you. From this vantage point, you can observe their movements without being detected.\""
-    },
-    {
-        "id": "022",
-        "text": "\"You remain hidden in the tall grass until the ants lose interest and move on. After waiting a few minutes to ensure they're gone, you make your way safely back home.\""
+        "text": "\"As you turn away, the door slams shut behind you.\""
     },
     {
         "id": "1",
-        "text": "\"After a grueling battle, you manage to defeat the giant ant using your butter knife's sharp edge. The other ants retreat in fear.\"",
+        "text": "\"Someone hears you and comes to investigate.\"",
         "choices": [
             {
-                "text": "\"Explore the ant hill\"",
+                "text": "\"Run away\"",
                 "nextNodeID": "10"
             },
             {
-                "text": "\"Follow the ants to their nest\"",
+                "text": "\"Confront them directly\"",
                 "nextNodeID": "11"
             },
             {
-                "text": "\"Investigate the butter knife's origins\"",
+                "text": "\"Hide and listen\"",
                 "nextNodeID": "12"
             }
         ]
     },
     {
         "id": "10",
-        "text": "\"\"",
-        "choices": [
-            {
-                "text": "\"Go left\"",
-                "nextNodeID": "100"
-            },
-            {
-                "text": "\"Go right\"",
-                "nextNodeID": "101"
-            },
-            {
-                "text": "\"Climb the tree\"",
-                "nextNodeID": "102"
-            }
-        ]
-    },
-    {
-        "id": "100",
-        "text": "\"You find yourself in an enchanted forest, filled with strange creatures and magical plants. You come across a fork in the path. Which way do you go? Go left would lead you to a hidden clearing where fairies dance around a bubbling spring. Go right takes you down a winding trail that leads to an ancient ruin said to be haunted by restless spirits. Or, perhaps climbing the tree might reveal a secret bird's nest with precious gems inside.\""
-    },
-    {
-        "id": "101",
-        "text": "\"If you choose 'Go left', you enter the hidden clearing and are greeted by the fairies who invite you to join their dance around the spring. You feel lighter than air as they teach you their ancient dance moves, and your heart is filled with joy and wonder at this magical experience. However, beware! The fairies' mischievous nature might lead them to play a prank on you if you stay too long.\""
-    },
-    {
-        "id": "102",
-        "text": "\"If you choose 'Go right', you find yourself standing before the crumbling walls of an ancient ruin. As you cautiously explore its dark corridors, you come face-to-face with the restless spirits that haunt it. They speak in hushed whispers and beckon for you to join them. If you choose to listen to their tales of long-lost treasures and forgotten kingdoms, they might just reveal a hidden passage leading to an underground chamber filled with untold riches.\""
+        "text": "\"You successfully escape but lose some valuable items.\""
     },
     {
         "id": "11",
-        "text": "\"\"",
-        "choices": [
-            {
-                "text": "\"You find yourself in a dark forest, with no idea how you got here.\"",
-                "nextNodeID": "110"
-            },
-            {
-                "text": "\"Explore deeper into the forest\"",
-                "nextNodeID": "111"
-            },
-            {
-                "text": "\"Ask a passing traveler for directions\"",
-                "nextNodeID": "112"
-            }
-        ]
-    },
-    {
-        "id": "110",
-        "text": "\"Wait for help to arrive\""
-    },
-    {
-        "id": "111",
-        "text": "\"\""
-    },
-    {
-        "id": "112",
-        "text": "\"\""
+        "text": "\"They recognize you as a friend and help you in your adventure.\""
     },
     {
         "id": "12",
-        "text": "\"\"",
-        "choices": [
-            {
-                "text": "\"Choice A\"",
-                "nextNodeID": "120"
-            },
-            {
-                "text": "\"Choice B\"",
-                "nextNodeID": "121"
-            },
-            {
-                "text": "\"Choice C\"",
-                "nextNodeID": "122"
-            }
-        ]
-    },
-    {
-        "id": "120",
-        "text": "\"Story A\""
-    },
-    {
-        "id": "121",
-        "text": "\"Story B\""
-    },
-    {
-        "id": "122",
-        "text": "\"Story C\""
+        "text": "\"You learn crucial information about the person investigating, giving you an advantage later on.\""
     },
     {
         "id": "2",
-        "text": "\"As you run towards the ocean, you are suddenly surrounded by more giant ants. You realize that running was not the best choice as you are now trapped and outnumbered.\"",
+        "text": "\"Your vision slowly clears, revealing...\"",
         "choices": [
             {
-                "text": "\"Fight the ants\"",
+                "text": "\"Explore the room\"",
                 "nextNodeID": "20"
             },
             {
-                "text": "\"Climb up the nearest tree\"",
+                "text": "\"Talk to the figure\"",
                 "nextNodeID": "21"
             },
             {
-                "text": "\"Hide behind nearby rocks\"",
+                "text": "\"Run away\"",
                 "nextNodeID": "22"
             }
         ]
     },
     {
         "id": "20",
-        "text": "\"You manage to fend off the ants and make a run for it.\"",
-        "choices": [
-            {
-                "text": "\"Run towards the nearest tree\"",
-                "nextNodeID": "200"
-            },
-            {
-                "text": "\"Hide behind the nearby rocks\"",
-                "nextNodeID": "201"
-            },
-            {
-                "text": "\"Climb up the closest tall structure\"",
-                "nextNodeID": "202"
-            }
-        ]
-    },
-    {
-        "id": "200",
-        "text": "\"You reach the safety of the trees and lose sight of the ants.\""
-    },
-    {
-        "id": "201",
-        "text": "\"The ants lose interest in you as they focus on their fallen comrades.\""
-    },
-    {
-        "id": "202",
-        "text": "\"Despite your efforts, you're swarmed by a group of worker ants and bitten to death.\""
+        "text": "\"You find a hidden passage leading deeper into the mansion.\""
     },
     {
         "id": "21",
-        "text": "\"The ants follow you, but you successfully climb high enough to be out of reach.\"",
-        "choices": [
-            {
-                "text": "\"Climb higher on the tree\"",
-                "nextNodeID": "210"
-            },
-            {
-                "text": "\"Throw rocks at ants to deter them\"",
-                "nextNodeID": "211"
-            },
-            {
-                "text": "\"Find another way around the ant colony\"",
-                "nextNodeID": "212"
-            }
-        ]
-    },
-    {
-        "id": "210",
-        "text": "\"You reach a branch with juicy ripe fruit. The ants have no interest in climbing after you.\""
-    },
-    {
-        "id": "211",
-        "text": "\"The ants eventually lose interest and disperse, leaving you free to continue your journey.\""
-    },
-    {
-        "id": "212",
-        "text": "\"A family of raccoons chases you away from their den, forcing you back towards the ant colony.\""
+        "text": "\"The figure reveals itself as your long-lost twin sibling and tells you about an ancient family secret.\""
     },
     {
         "id": "22",
-        "text": "\"You avoid detection by hiding effectively. The ants eventually lose interest and disperse.\"",
-        "choices": [
-            {
-                "text": "\"You follow the ants to their hill.\"",
-                "nextNodeID": "220"
-            },
-            {
-                "text": "\"You try to communicate with them.\"",
-                "nextNodeID": "221"
-            },
-            {
-                "text": "\"You continue on your original path.\"",
-                "nextNodeID": "222"
-            }
-        ]
+        "text": "\"In your haste, you trip over something and set off an alarm. Security guards rush in and capture you.\""
     },
     {
-        "id": "220",
-        "text": "\"The ants lead you to a hidden treasure trove, but it's guarded by giant spiders. Do you fight the spiders or find another way around?\""
-    },
-    {
-        "id": "221",
-        "text": "\"The ants understand and guide you past dangerous obstacles until you reach your destination.\""
-    },
-    {
-        "id": "222",
-        "text": "\"You encounter no further challenges as you continue on your journey.\""
-    },
-    {
-        "depth": 3,
-        "title": "Ant Beach"
+        "depth": 2,
+        "title": "Untitled Story"
     }
 ]
