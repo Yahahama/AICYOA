@@ -6,8 +6,8 @@ import os
 
 def extractQuote(text, n=1):
     quotes = []
-    start = -1
-    for i in range(n):
+    for _ in range(n):
+        start = -1
         for j in range(len(text)):
             if text[j] == "\"":
                 if start == -1:
@@ -15,8 +15,10 @@ def extractQuote(text, n=1):
                 else:
                     quotes.append(text[start:j+1])
                     text = text[:start] + text[j+1:]
-                    start = -1
+                    start = -2
                     break
+        # If start is -2, quote found and popped.
+        if start == -2: continue
         quotes.append('')
     return quotes
 
@@ -83,14 +85,14 @@ def createStory(id='', prevGenStories=[]):
         with model.chat_session(system_template, prompt_template):
             genStories = []
             genChoices = []
-            def generateText():
-                while True:
-                    response = extractQuote(model.generate(currentStory, max_tokens=400, temp=.75), 6)
-                    if len(response) >= 6 and all(response):
-                        return response[:3], response[3:]
-                    printRed("Incomplete response generated! Retrying node \"%s\"" % id)
-                    return generateText()
-            genChoices, genStories = generateText()
+            # First six quotations from AI response consist of 3 generated stories and 3 generated choices
+            response = model.generate(currentStory, max_tokens=400, temp=.75)
+            response = extractQuote(response, 6)
+            if not all(response[:6]):
+                printRed("Incomplete response generated! Retrying node \"%s\"" % id)
+                # Response regenerated with random seed, hopefully getting a satisfactory response. If not, it's a lost cause anyway _/¯(ツ)_/¯
+                response = extractQuote(model.generate("CHAT SEED: %i\n%s" % (randint(0, 9999), currentStory), max_tokens=400, temp=.75), 6)
+            genStories, genChoices = response[:3], response[3:]
             prevGenStories.append(genStories)
             newNode.update({"choices": [
                 {

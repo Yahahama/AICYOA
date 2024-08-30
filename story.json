@@ -1,10 +1,10 @@
 [
     {
         "id": "",
-        "text": "You wake up on a beach, groggy and disoriented. Suddenly, an ant the size of a horse begins to charge at you, kicking up sand as it sprints!",
+        "text": "You wake up on a beach with only a butter knife, two thick wooly socks, and a beat-up set of clothes. An ant the size of a horse turns its massive head to see you and begins to charge!",
         "choices": [
             {
-                "text": "\"Dodge\"",
+                "text": "\"Help! Giant ants!\"",
                 "nextNodeID": "0"
             },
             {
@@ -12,359 +12,125 @@
                 "nextNodeID": "1"
             },
             {
-                "text": "\"Climb Tree\"",
+                "text": "",
                 "nextNodeID": "2"
             }
         ]
     },
     {
         "id": "0",
-        "text": "",
+        "text": "\"Throw your socks at the ant\"",
         "choices": [
             {
-                "text": "\"Enter the dark cave\"",
+                "text": "\"You successfully avoid the ant's path.\"",
                 "nextNodeID": "00"
             },
             {
-                "text": "",
+                "text": "\"An NPC gives you a helpful hint on how to deal with the ant.\"",
                 "nextNodeID": "01"
             },
             {
-                "text": "\"Ask the old man for directions\"",
+                "text": "\"The ant continues its journey, undisturbed by your presence.\"",
                 "nextNodeID": "02"
             }
         ]
     },
     {
         "id": "00",
-        "text": "",
+        "text": "\"Jump over the ant\"",
         "choices": [
             {
-                "text": "\"Enter the room\"",
+                "text": "\"You successfully crossed the obstacle and continue forward.\"",
                 "nextNodeID": "000"
             },
             {
-                "text": "",
+                "text": "\"The ant's friends join in, making your journey more difficult.\"",
                 "nextNodeID": "001"
             },
             {
-                "text": "\"Avoid the room\"",
+                "text": "\"You take a detour to avoid the ants, but lose some time.\"",
                 "nextNodeID": "002"
             }
         ]
     },
     {
         "id": "000",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "0000"
-            },
-            {
-                "text": "",
-                "nextNodeID": "0001"
-            },
-            {
-                "text": "\"Talk to the old man at the crossroads,\"",
-                "nextNodeID": "0002"
-            }
-        ]
-    },
-    {
-        "id": "0000",
-        "text": ""
-    },
-    {
-        "id": "0001",
-        "text": "\"Search the nearby ruins.\""
-    },
-    {
-        "id": "0002",
-        "text": ""
+        "text": "\"Jump over the ant\""
     },
     {
         "id": "001",
-        "text": "\"Investigate further\"",
-        "choices": [
-            {
-                "text": "\"Explore the abandoned house\"",
-                "nextNodeID": "0010"
-            },
-            {
-                "text": "",
-                "nextNodeID": "0011"
-            },
-            {
-                "text": "\"Interrogate the suspicious stranger\"",
-                "nextNodeID": "0012"
-            }
-        ]
-    },
-    {
-        "id": "0010",
-        "text": ""
-    },
-    {
-        "id": "0011",
-        "text": "\"Search for clues in the forest\""
-    },
-    {
-        "id": "0012",
-        "text": ""
+        "text": "\"Step on the ant\""
     },
     {
         "id": "002",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "0020"
-            },
-            {
-                "text": "",
-                "nextNodeID": "0021"
-            },
-            {
-                "text": "\"Search for clues in the abandoned village,\"",
-                "nextNodeID": "0022"
-            }
-        ]
-    },
-    {
-        "id": "0020",
-        "text": ""
-    },
-    {
-        "id": "0021",
-        "text": "\"Follow the river downstream.\""
-    },
-    {
-        "id": "0022",
-        "text": ""
+        "text": "\"Avoid the ant\""
     },
     {
         "id": "01",
-        "text": "\"Follow the river downstream\"",
+        "text": "\"Ask an NPC for help\"",
         "choices": [
             {
-                "text": "\"Explore the dense forest\"",
+                "text": "\"Expert's Advice\"",
                 "nextNodeID": "010"
             },
             {
-                "text": "",
+                "text": "\"Hidden Resource Found\"",
                 "nextNodeID": "011"
             },
             {
-                "text": "\"Search for signs of civilization\"",
+                "text": "\"Animal Companion\"",
                 "nextNodeID": "012"
             }
         ]
     },
     {
         "id": "010",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "0100"
-            },
-            {
-                "text": "",
-                "nextNodeID": "0101"
-            },
-            {
-                "text": "\"Search for clues in the abandoned village,\"",
-                "nextNodeID": "0102"
-            }
-        ]
-    },
-    {
-        "id": "0100",
-        "text": ""
-    },
-    {
-        "id": "0101",
-        "text": "\"Follow the river downstream.\""
-    },
-    {
-        "id": "0102",
-        "text": ""
+        "text": "\"Consult an expert\""
     },
     {
         "id": "011",
-        "text": "\"Follow the river further downstream\"",
-        "choices": [
-            {
-                "text": "\"Explore the dense forest on your left.\"",
-                "nextNodeID": "0110"
-            },
-            {
-                "text": "",
-                "nextNodeID": "0111"
-            },
-            {
-                "text": "\"Follow the riverbank to your right.\"",
-                "nextNodeID": "0112"
-            }
-        ]
-    },
-    {
-        "id": "0110",
-        "text": ""
-    },
-    {
-        "id": "0111",
-        "text": "\"Cross the river using the fallen tree you see ahead.\""
-    },
-    {
-        "id": "0112",
-        "text": ""
+        "text": "\"Seek out a hidden resource\""
     },
     {
         "id": "012",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Go left down the hallway,\"",
-                "nextNodeID": "0120"
-            },
-            {
-                "text": "",
-                "nextNodeID": "0121"
-            },
-            {
-                "text": "\"Enter the room on the right,\"",
-                "nextNodeID": "0122"
-            }
-        ]
-    },
-    {
-        "id": "0120",
-        "text": ""
-    },
-    {
-        "id": "0121",
-        "text": "\"Search for clues in the basement.\""
-    },
-    {
-        "id": "0122",
-        "text": ""
+        "text": "\"Befriend a helpful creature\""
     },
     {
         "id": "02",
-        "text": "",
+        "text": "\"Ignore the ant\"",
         "choices": [
             {
-                "text": "\"Enter the abandoned house\"",
+                "text": "\"\"",
                 "nextNodeID": "020"
             },
             {
-                "text": "",
+                "text": "\" The game ends here.\nConclusion 2: \"",
                 "nextNodeID": "021"
             },
             {
-                "text": "\"Follow the trail of footprints\"",
+                "text": "\" The game ends here.\nConclusion 3: \"",
                 "nextNodeID": "022"
             }
         ]
     },
     {
         "id": "020",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "0200"
-            },
-            {
-                "text": "",
-                "nextNodeID": "0201"
-            },
-            {
-                "text": "\"Ask directions from the stranger,\"",
-                "nextNodeID": "0202"
-            }
-        ]
-    },
-    {
-        "id": "0200",
-        "text": ""
-    },
-    {
-        "id": "0201",
-        "text": "\"Search for clues around the abandoned house.\""
-    },
-    {
-        "id": "0202",
-        "text": ""
+        "text": "\"Examine the ant\""
     },
     {
         "id": "021",
-        "text": "\"Ask the old woman for directions\"",
-        "choices": [
-            {
-                "text": "\"Follow the dirt road\"",
-                "nextNodeID": "0210"
-            },
-            {
-                "text": "",
-                "nextNodeID": "0211"
-            },
-            {
-                "text": "\"Ask about the mysterious tower\"",
-                "nextNodeID": "0212"
-            }
-        ]
-    },
-    {
-        "id": "0210",
-        "text": ""
-    },
-    {
-        "id": "0211",
-        "text": "\"Inquire about the old well\""
-    },
-    {
-        "id": "0212",
-        "text": ""
+        "text": "\"Kick the ant away\""
     },
     {
         "id": "022",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "0220"
-            },
-            {
-                "text": "",
-                "nextNodeID": "0221"
-            },
-            {
-                "text": "\"Search for clues in the abandoned village,\"",
-                "nextNodeID": "0222"
-            }
-        ]
-    },
-    {
-        "id": "0220",
-        "text": ""
-    },
-    {
-        "id": "0221",
-        "text": "\"Follow the river downstream.\""
-    },
-    {
-        "id": "0222",
-        "text": ""
+        "text": "\"Pet the ant gently\""
     },
     {
         "id": "1",
-        "text": "\"Attack with Rock\"",
+        "text": "\"Use your butter knife to carve a message in the sand\"",
         "choices": [
             {
-                "text": "\"Climb the rock wall\"",
+                "text": "\"The Key.\"",
                 "nextNodeID": "10"
             },
             {
@@ -372,17 +138,17 @@
                 "nextNodeID": "11"
             },
             {
-                "text": "\"Throw another rock\"",
+                "text": "",
                 "nextNodeID": "12"
             }
         ]
     },
     {
         "id": "10",
-        "text": "",
+        "text": "\"Ask the mysterious figure for help\"",
         "choices": [
             {
-                "text": "\"Enter the abandoned house\"",
+                "text": "\"Following the guidance,\"",
                 "nextNodeID": "100"
             },
             {
@@ -390,341 +156,107 @@
                 "nextNodeID": "101"
             },
             {
-                "text": "\"Follow the path into the woods\"",
+                "text": "",
                 "nextNodeID": "102"
             }
         ]
     },
     {
         "id": "100",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "1000"
-            },
-            {
-                "text": "",
-                "nextNodeID": "1001"
-            },
-            {
-                "text": "\"Ask directions from the stranger,\"",
-                "nextNodeID": "1002"
-            }
-        ]
-    },
-    {
-        "id": "1000",
-        "text": ""
-    },
-    {
-        "id": "1001",
-        "text": "\"Investigate the mysterious note.\""
-    },
-    {
-        "id": "1002",
-        "text": ""
+        "text": "\"Seek guidance from the figure\""
     },
     {
         "id": "101",
-        "text": "\"Ask the old man for directions\"",
-        "choices": [
-            {
-                "text": "\"Follow the dirt road\"",
-                "nextNodeID": "1010"
-            },
-            {
-                "text": "",
-                "nextNodeID": "1011"
-            },
-            {
-                "text": "\"Ask about local landmarks\"",
-                "nextNodeID": "1012"
-            }
-        ]
-    },
-    {
-        "id": "1010",
-        "text": ""
-    },
-    {
-        "id": "1011",
-        "text": "\"Inquire about nearby settlements\""
-    },
-    {
-        "id": "1012",
-        "text": ""
+        "text": "\"Ignore the figure's offer\""
     },
     {
         "id": "102",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "1020"
-            },
-            {
-                "text": "",
-                "nextNodeID": "1021"
-            },
-            {
-                "text": "\"Search for clues in the abandoned village,\"",
-                "nextNodeID": "1022"
-            }
-        ]
-    },
-    {
-        "id": "1020",
-        "text": ""
-    },
-    {
-        "id": "1021",
-        "text": "\"Follow the river downstream.\""
-    },
-    {
-        "id": "1022",
-        "text": ""
+        "text": "\"Demand proof of their intentions\""
     },
     {
         "id": "11",
-        "text": "\"Aim for the weak spot\"",
+        "text": "\"Ignore the figure and continue exploring\"",
         "choices": [
             {
-                "text": "\"Dodge left\"",
+                "text": "\"You find the treasure!\"",
                 "nextNodeID": "110"
             },
             {
-                "text": "",
+                "text": "\"The figure betrays you.\"",
                 "nextNodeID": "111"
             },
             {
-                "text": "\"Dodge right\"",
+                "text": "\"You get lost in thought.\"",
                 "nextNodeID": "112"
             }
         ]
     },
     {
         "id": "110",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "1100"
-            },
-            {
-                "text": "",
-                "nextNodeID": "1101"
-            },
-            {
-                "text": "\"Ask directions from the friendly stranger,\"",
-                "nextNodeID": "1102"
-            }
-        ]
-    },
-    {
-        "id": "1100",
-        "text": ""
-    },
-    {
-        "id": "1101",
-        "text": "\"Search for clues in the abandoned village.\""
-    },
-    {
-        "id": "1102",
-        "text": ""
+        "text": "\"Investigate the figure\""
     },
     {
         "id": "111",
-        "text": "\"Stand your ground\"",
-        "choices": [
-            {
-                "text": "\"Fight with your fists\"",
-                "nextNodeID": "1110"
-            },
-            {
-                "text": "",
-                "nextNodeID": "1111"
-            },
-            {
-                "text": "\"Use your wits\"",
-                "nextNodeID": "1112"
-            }
-        ]
-    },
-    {
-        "id": "1110",
-        "text": ""
-    },
-    {
-        "id": "1111",
-        "text": "\"Call for backup\""
-    },
-    {
-        "id": "1112",
-        "text": ""
+        "text": "\"Avoid the figure\""
     },
     {
         "id": "112",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "1120"
-            },
-            {
-                "text": "",
-                "nextNodeID": "1121"
-            },
-            {
-                "text": "\"Talk to the old man at the crossroads,\"",
-                "nextNodeID": "1122"
-            }
-        ]
-    },
-    {
-        "id": "1120",
-        "text": ""
-    },
-    {
-        "id": "1121",
-        "text": "\"Search the nearby ruins.\""
-    },
-    {
-        "id": "1122",
-        "text": ""
+        "text": "\"Approach the figure\""
     },
     {
         "id": "12",
-        "text": "",
+        "text": "\"Confront the figure directly\"",
         "choices": [
             {
-                "text": "\"Enter the dark forest\"",
+                "text": "\"A new friendship begins.\"",
                 "nextNodeID": "120"
             },
             {
-                "text": "",
+                "text": "\"Attack aggressively\"",
                 "nextNodeID": "121"
             },
             {
-                "text": "\"Ask directions from the old man at the crossroads\"",
+                "text": "\"You've apprehended a criminal!\"",
                 "nextNodeID": "122"
             }
         ]
     },
     {
         "id": "120",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Go left down the dark alley,\"",
-                "nextNodeID": "1200"
-            },
-            {
-                "text": "",
-                "nextNodeID": "1201"
-            },
-            {
-                "text": "\"Enter the mysterious building,\"",
-                "nextNodeID": "1202"
-            }
-        ]
-    },
-    {
-        "id": "1200",
-        "text": ""
-    },
-    {
-        "id": "1201",
-        "text": "\"Talk to the stranger standing nearby.\""
-    },
-    {
-        "id": "1202",
-        "text": ""
+        "text": "\"Approach calmly\""
     },
     {
         "id": "121",
-        "text": "\"Search for clues in the abandoned village\"",
-        "choices": [
-            {
-                "text": "\"Explore the village center\"",
-                "nextNodeID": "1210"
-            },
-            {
-                "text": "",
-                "nextNodeID": "1211"
-            },
-            {
-                "text": "\"Search houses for clues\"",
-                "nextNodeID": "1212"
-            }
-        ]
-    },
-    {
-        "id": "1210",
-        "text": ""
-    },
-    {
-        "id": "1211",
-        "text": "\"Interrogate remaining villagers\""
-    },
-    {
-        "id": "1212",
-        "text": ""
+        "text": "\"You've found the pet!\""
     },
     {
         "id": "122",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Go left down the hallway,\"",
-                "nextNodeID": "1220"
-            },
-            {
-                "text": "",
-                "nextNodeID": "1221"
-            },
-            {
-                "text": "\"Go right down the hallway,\"",
-                "nextNodeID": "1222"
-            }
-        ]
-    },
-    {
-        "id": "1220",
-        "text": ""
-    },
-    {
-        "id": "1221",
-        "text": "\"Enter the room ahead.\""
-    },
-    {
-        "id": "1222",
-        "text": ""
+        "text": "\"The figure is grateful.\""
     },
     {
         "id": "2",
-        "text": "",
+        "text": "\"Shout for help hoping someone hears you on land or sea.\"",
         "choices": [
             {
-                "text": "\"Enter the dark cave\"",
+                "text": "\"You ask someone on land for directions and they point you towards the northwest, mentioning an old lighthouse that might have some help.\"",
                 "nextNodeID": "20"
             },
             {
-                "text": "",
+                "text": "\"No one hears your shout. You decide to try again, this time with more force.\"",
                 "nextNodeID": "21"
             },
             {
-                "text": "\"Follow the trail of glowing mushrooms\"",
+                "text": "\"As you wait, a small boat drifts into view carrying two sailors who seem willing to assist you.\"",
                 "nextNodeID": "22"
             }
         ]
     },
     {
         "id": "20",
-        "text": "",
+        "text": "\"Ask for directions.\"",
         "choices": [
             {
-                "text": "\"Enter the dark forest\"",
+                "text": "",
                 "nextNodeID": "200"
             },
             {
@@ -732,319 +264,85 @@
                 "nextNodeID": "201"
             },
             {
-                "text": "\"Ask directions from the villagers\"",
+                "text": "",
                 "nextNodeID": "202"
             }
         ]
     },
     {
         "id": "200",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "2000"
-            },
-            {
-                "text": "",
-                "nextNodeID": "2001"
-            },
-            {
-                "text": "\"Search for clues in the abandoned village,\"",
-                "nextNodeID": "2002"
-            }
-        ]
-    },
-    {
-        "id": "2000",
-        "text": ""
-    },
-    {
-        "id": "2001",
-        "text": "\"Follow the river downstream.\""
-    },
-    {
-        "id": "2002",
-        "text": ""
+        "text": "\"Ask the old man.\""
     },
     {
         "id": "201",
-        "text": "\"Search for clues in the abandoned village\"",
-        "choices": [
-            {
-                "text": "\"Explore the old church\"",
-                "nextNodeID": "2010"
-            },
-            {
-                "text": "",
-                "nextNodeID": "2011"
-            },
-            {
-                "text": "\"Interrogate the villager\"",
-                "nextNodeID": "2012"
-            }
-        ]
-    },
-    {
-        "id": "2010",
-        "text": ""
-    },
-    {
-        "id": "2011",
-        "text": "\"Search the ruins of the general store\""
-    },
-    {
-        "id": "2012",
-        "text": ""
+        "text": "\"Ask the woman with the dog.\""
     },
     {
         "id": "202",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Go left down the hallway,\"",
-                "nextNodeID": "2020"
-            },
-            {
-                "text": "",
-                "nextNodeID": "2021"
-            },
-            {
-                "text": "\"Enter the room with the glowing light,\"",
-                "nextNodeID": "2022"
-            }
-        ]
-    },
-    {
-        "id": "2020",
-        "text": ""
-    },
-    {
-        "id": "2021",
-        "text": "\"Continue straight ahead.\""
-    },
-    {
-        "id": "2022",
-        "text": ""
+        "text": "\"Use your map from back home.\""
     },
     {
         "id": "21",
-        "text": "\"Ask the talking tree for directions\"",
+        "text": "\"Shout louder.\"",
         "choices": [
             {
-                "text": "\"Follow the path westward\"",
+                "text": "\"\"",
                 "nextNodeID": "210"
             },
             {
-                "text": "",
+                "text": "\"\"",
                 "nextNodeID": "211"
             },
             {
-                "text": "\"Ask about the strange symbols\"",
+                "text": "\"\"",
                 "nextNodeID": "212"
             }
         ]
     },
     {
         "id": "210",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "2100"
-            },
-            {
-                "text": "",
-                "nextNodeID": "2101"
-            },
-            {
-                "text": "\"Search for clues in the abandoned village,\"",
-                "nextNodeID": "2102"
-            }
-        ]
-    },
-    {
-        "id": "2100",
-        "text": ""
-    },
-    {
-        "id": "2101",
-        "text": "\"Follow the river downstream.\""
-    },
-    {
-        "id": "2102",
-        "text": ""
+        "text": "\"Follow the noise.\""
     },
     {
         "id": "211",
-        "text": "\"Search for clues around the tree\"",
-        "choices": [
-            {
-                "text": "\"Examine the tree trunk\"",
-                "nextNodeID": "2110"
-            },
-            {
-                "text": "",
-                "nextNodeID": "2111"
-            },
-            {
-                "text": "\"Search for clues on the ground\"",
-                "nextNodeID": "2112"
-            }
-        ]
-    },
-    {
-        "id": "2110",
-        "text": ""
-    },
-    {
-        "id": "2111",
-        "text": "\"Inspect the leaves and branches\""
-    },
-    {
-        "id": "2112",
-        "text": ""
+        "text": "\"Try to communicate non-verbally.\""
     },
     {
         "id": "212",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "2120"
-            },
-            {
-                "text": "",
-                "nextNodeID": "2121"
-            },
-            {
-                "text": "\"Ask directions from the old man,\"",
-                "nextNodeID": "2122"
-            }
-        ]
-    },
-    {
-        "id": "2120",
-        "text": ""
-    },
-    {
-        "id": "2121",
-        "text": "\"Search for clues in the abandoned village.\""
-    },
-    {
-        "id": "2122",
-        "text": ""
+        "text": "\"Throw something towards the source of the sound.\""
     },
     {
         "id": "22",
-        "text": "",
+        "text": "\"Wait patiently.\"",
         "choices": [
             {
-                "text": "\"Enter the dark forest\"",
+                "text": "\"You find yourself in an abandoned warehouse filled with discarded junk.\"",
                 "nextNodeID": "220"
             },
             {
-                "text": "",
+                "text": "\"You discover a hidden room containing valuable treasures.\"",
                 "nextNodeID": "221"
             },
             {
-                "text": "\"Ask directions from the old man at the crossroads\"",
+                "text": "\"The strange figure reveals itself to be your long-lost sibling, seeking your help on a dangerous quest.\"",
                 "nextNodeID": "222"
             }
         ]
     },
     {
         "id": "220",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Go left down the hallway,\"",
-                "nextNodeID": "2200"
-            },
-            {
-                "text": "",
-                "nextNodeID": "2201"
-            },
-            {
-                "text": "\"Enter the room on the right,\"",
-                "nextNodeID": "2202"
-            }
-        ]
-    },
-    {
-        "id": "2200",
-        "text": ""
-    },
-    {
-        "id": "2201",
-        "text": "\"Climb over the fence.\""
-    },
-    {
-        "id": "2202",
-        "text": ""
+        "text": "\"Turn left into the dark alley.\""
     },
     {
         "id": "221",
-        "text": "\"Follow the river southward\"",
-        "choices": [
-            {
-                "text": "\"Explore the dense forest on your left.\"",
-                "nextNodeID": "2210"
-            },
-            {
-                "text": "",
-                "nextNodeID": "2211"
-            },
-            {
-                "text": "\"Cross the river to investigate the island ahead.\"",
-                "nextNodeID": "2212"
-            }
-        ]
-    },
-    {
-        "id": "2210",
-        "text": ""
-    },
-    {
-        "id": "2211",
-        "text": "\"Follow the path leading eastward.\""
-    },
-    {
-        "id": "2212",
-        "text": ""
+        "text": "\"Enter the mysterious building.\""
     },
     {
         "id": "222",
-        "text": "",
-        "choices": [
-            {
-                "text": "\"Enter the dark forest,\"",
-                "nextNodeID": "2220"
-            },
-            {
-                "text": "",
-                "nextNodeID": "2221"
-            },
-            {
-                "text": "\"Ask directions from the friendly stranger,\"",
-                "nextNodeID": "2222"
-            }
-        ]
+        "text": "\"Approach the strange figure.\""
     },
     {
-        "id": "2220",
-        "text": ""
-    },
-    {
-        "id": "2221",
-        "text": "\"Investigate the mysterious ruins.\""
-    },
-    {
-        "id": "2222",
-        "text": ""
-    },
-    {
-        "depth": 4,
-        "title": "Ant Beach"
+        "depth": 3,
+        "title": "Ant Beach: The Reckoning"
     }
 ]
