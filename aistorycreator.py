@@ -19,7 +19,7 @@ def extractQuote(text, n=1):
                     break
         # If start is -2, quote found and popped.
         if start == -2: continue
-        quotes.append('')
+        quotes.append("")
     return quotes
 
 def delete_last_lines(n=1): 
@@ -78,21 +78,23 @@ def createStory(id='', prevGenStories=[]):
     if currentDepth != finalDepth:
         # If we're at second-to-last depth, prompt attempts to generate conclusions rather than continuations
         if currentDepth == finalDepth - 1:
-            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story conclusions each surrounded by quotes and seperated by a whitespace.\nAI: "
+            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story conclusions each surrounded by quotes and seperated by a whitespace. Use this form: CHOICES: \"\" \"\" \"\" STORIES: \"\" \"\" \"\"\nAI: "
         else:
-            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story continuations each surrounded by quotes and seperated by a whitespace.\nAI: "
+            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story continuations each surrounded by quotes and seperated by a whitespace. Use this form: CHOICES: \"\" \"\" \"\" CONCLUSIONS: \"\" \"\" \"\"\nAI: "
         printGreen("Generating node with ID \"%s\"" % id)
         with model.chat_session(system_template, prompt_template):
-            genStories = []
             genChoices = []
+            genStories = []
             # First six quotations from AI response consist of 3 generated stories and 3 generated choices
-            response = model.generate(currentStory, max_tokens=400, temp=.75)
+            response = model.generate(currentStory, max_tokens=800, temp=.75)
+            print(response)
             response = extractQuote(response, 6)
-            if not all(response[:6]):
+            print(response)
+            if "" in response:
                 printRed("Incomplete response generated! Retrying node \"%s\"" % id)
                 # Response regenerated with random seed, hopefully getting a satisfactory response. If not, it's a lost cause anyway _/¯(ツ)_/¯
                 response = extractQuote(model.generate("CHAT SEED: %i\n%s" % (randint(0, 9999), currentStory), max_tokens=400, temp=.75), 6)
-            genStories, genChoices = response[:3], response[3:]
+            genChoices, genStories = response[:3], response[3:]
             prevGenStories.append(genStories)
             newNode.update({"choices": [
                 {
