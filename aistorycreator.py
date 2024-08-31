@@ -13,7 +13,7 @@ def extractQuote(text, n=1):
                 if start == -1:
                     start = j
                 else:
-                    quotes.append(text[start+1:j])
+                    quotes.append(text[start:j+1])
                     text = text[:start] + text[j+1:]
                     start = -2
                     break

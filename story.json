@@ -1,114 +1,348 @@
 [
     {
         "id": "",
-        "text": "You are in a dark room. You can't see anything.",
+        "text": "You wake up on a beach with only a butter knife, two thick wooly socks, and a beat-up set of clothes. An ant the size of a horse turns its massive head to see you and begins to charge!",
         "choices": [
             {
-                "text": "\"Feel around the room\"",
+                "text": "Run towards the sea",
                 "nextNodeID": "0"
             },
             {
-                "text": "\"Shout for help\"",
+                "text": "Throw the butter knife at the ant",
                 "nextNodeID": "1"
             },
             {
-                "text": "\"Wait for your eyes to adjust\"",
+                "text": "Try to reason with the giant ant",
                 "nextNodeID": "2"
             }
         ]
     },
     {
         "id": "0",
-        "text": "\"You find a door handle.\"",
+        "text": "You reach the water's edge and notice a small boat tied up. You jump in and paddle away, hoping to find help.",
         "choices": [
             {
-                "text": "\"Open the door\"",
+                "text": "Follow the river north",
                 "nextNodeID": "00"
             },
             {
-                "text": "\"Push the handle\"",
+                "text": "Ask for help at the nearest village",
                 "nextNodeID": "01"
             },
             {
-                "text": "\"Ignore it\"",
+                "text": "Continue paddling until you find land",
                 "nextNodeID": "02"
             }
         ]
     },
     {
         "id": "00",
-        "text": "\"You enter a dimly lit room filled with dusty antiques.\""
+        "text": "You reach a bustling town where people are eager to assist.",
+        "choices": [
+            {
+                "text": "Investigate the commotion",
+                "nextNodeID": "000"
+            },
+            {
+                "text": "Ask for directions from an old woman",
+                "nextNodeID": "001"
+            },
+            {
+                "text": "Befriend a group of children",
+                "nextNodeID": "002"
+            }
+        ]
+    },
+    {
+        "id": "000",
+        "text": "You discover a hidden treasure map."
+    },
+    {
+        "id": "001",
+        "text": "You find your way to the king's palace."
+    },
+    {
+        "id": "002",
+        "text": "The children lead you to a secret underground hideout."
     },
     {
         "id": "01",
-        "text": "\"The door leads you to an empty hallway.\""
+        "text": "The river leads you into a dead end, and you must turn back.",
+        "choices": [
+            {
+                "text": "Follow the river upstream",
+                "nextNodeID": "010"
+            },
+            {
+                "text": "Search for another way around",
+                "nextNodeID": "011"
+            },
+            {
+                "text": "Cross the river and explore further",
+                "nextNodeID": "012"
+            }
+        ]
+    },
+    {
+        "id": "010",
+        "text": "You find a hidden cave containing an ancient artifact."
+    },
+    {
+        "id": "011",
+        "text": "You discover a secret path that leads you to safety."
+    },
+    {
+        "id": "012",
+        "text": "The river's current becomes too strong, and you are swept away downstream."
     },
     {
         "id": "02",
-        "text": "\"As you turn away, the door slams shut behind you.\""
+        "text": "After hours of paddling, you spot some buildings in the distance.",
+        "choices": [
+            {
+                "text": "Investigate the buildings",
+                "nextNodeID": "020"
+            },
+            {
+                "text": "Continue paddling towards them",
+                "nextNodeID": "021"
+            },
+            {
+                "text": "Turn back and leave",
+                "nextNodeID": "022"
+            }
+        ]
+    },
+    {
+        "id": "020",
+        "text": "You discover a hidden village that needs your help."
+    },
+    {
+        "id": "021",
+        "text": "The buildings turn out to be an abandoned fort, but you find useful supplies inside."
+    },
+    {
+        "id": "022",
+        "text": "As you turn back, you notice smoke on the horizon. You realize too late that you should have sought help."
     },
     {
         "id": "1",
-        "text": "\"Someone hears you and comes to investigate.\"",
+        "text": "The knife hits the ant's head but doesn't seem to faze it. It charges faster!",
         "choices": [
             {
-                "text": "\"Run away\"",
+                "text": "Run away",
                 "nextNodeID": "10"
             },
             {
-                "text": "\"Confront them directly\"",
+                "text": "Throw another knife",
                 "nextNodeID": "11"
             },
             {
-                "text": "\"Hide and listen\"",
+                "text": "Try to grab it",
                 "nextNodeID": "12"
             }
         ]
     },
     {
         "id": "10",
-        "text": "\"You successfully escape but lose some valuable items.\""
+        "text": "The ant speeds past you, and you barely manage to avoid getting stung. You decide that this adventure is too dangerous for your taste.",
+        "choices": [
+            {
+                "text": "Turn back now",
+                "nextNodeID": "100"
+            },
+            {
+                "text": "Find another way around",
+                "nextNodeID": "101"
+            },
+            {
+                "text": "Face your fears and continue forward",
+                "nextNodeID": "102"
+            }
+        ]
+    },
+    {
+        "id": "100",
+        "text": "You safely return home, never to embark on such a perilous journey again."
+    },
+    {
+        "id": "101",
+        "text": "After some time, you reach the end of the adventure, having encountered no further danger or obstacles."
+    },
+    {
+        "id": "102",
+        "text": "As you press onward, you come face-to-face with an even more dangerous situation. You narrowly escape with your life and complete the adventure, feeling proud of yourself for overcoming your fears."
     },
     {
         "id": "11",
-        "text": "\"They recognize you as a friend and help you in your adventure.\""
+        "text": "You throw the second knife with precision, hitting the ant squarely in its head. It falls lifeless at your feet.",
+        "choices": [
+            {
+                "text": "Examine the ant's body",
+                "nextNodeID": "110"
+            },
+            {
+                "text": "Continue down the path",
+                "nextNodeID": "111"
+            },
+            {
+                "text": "Search for more weapons",
+                "nextNodeID": "112"
+            }
+        ]
+    },
+    {
+        "id": "110",
+        "text": "You find a small, intricately carved amulet around its neck."
+    },
+    {
+        "id": "111",
+        "text": "As you continue walking, you come across an old cabin. You decide to investigate it."
+    },
+    {
+        "id": "112",
+        "text": "While searching, you discover another knife and two arrows hidden in a hollowed-out tree trunk nearby."
     },
     {
         "id": "12",
-        "text": "\"You learn crucial information about the person investigating, giving you an advantage later on.\""
+        "text": "You reach out and grab the ant, only for it to bite down on your finger, injecting you with a powerful venom.",
+        "choices": [
+            {
+                "text": "You crush the ant, ending its life.",
+                "nextNodeID": "120"
+            },
+            {
+                "text": "You flick the ant away from you.",
+                "nextNodeID": "121"
+            },
+            {
+                "text": "You carefully remove the ant using tweezers.",
+                "nextNodeID": "122"
+            }
+        ]
+    },
+    {
+        "id": "120",
+        "text": "The venom quickly spreads through your body, causing intense pain and eventually death. Game Over."
+    },
+    {
+        "id": "121",
+        "text": "The ant's bite was harmless without its venom. You continue on your adventure unharmed."
+    },
+    {
+        "id": "122",
+        "text": "With the ant safely removed, you can now examine it for clues or crush it to extract any useful substances. Continue?"
     },
     {
         "id": "2",
-        "text": "\"Your vision slowly clears, revealing...\"",
+        "text": "To your surprise, the giant ant listens to you and explains that it has been guarding a treasure chest buried nearby. You can work together to retrieve it or continue on your original quest.",
         "choices": [
             {
-                "text": "\"Explore the room\"",
+                "text": "Work together with the giant ant",
                 "nextNodeID": "20"
             },
             {
-                "text": "\"Talk to the figure\"",
+                "text": "Continue on your original quest alone",
                 "nextNodeID": "21"
             },
             {
-                "text": "\"Run away\"",
+                "text": "Try to deceive the giant ant",
                 "nextNodeID": "22"
             }
         ]
     },
     {
         "id": "20",
-        "text": "\"You find a hidden passage leading deeper into the mansion.\""
+        "text": "You and the giant ant successfully retrieve the treasure chest, sharing it equally.",
+        "choices": [
+            {
+                "text": "Investigate the chest further",
+                "nextNodeID": "200"
+            },
+            {
+                "text": "Follow the giant ant back home",
+                "nextNodeID": "201"
+            },
+            {
+                "text": "Divide the treasure and part ways",
+                "nextNodeID": "202"
+            }
+        ]
+    },
+    {
+        "id": "200",
+        "text": "The chest contains a map leading to more treasures."
+    },
+    {
+        "id": "201",
+        "text": "The giant ant reveals its true form as an evil sorcerer who plans to conquer the world with your newfound wealth!"
+    },
+    {
+        "id": "202",
+        "text": "You both go your separate ways, never to meet again."
     },
     {
         "id": "21",
-        "text": "\"The figure reveals itself as your long-lost twin sibling and tells you about an ancient family secret.\""
+        "text": "You complete your original quest and find great success in doing so.",
+        "choices": [
+            {
+                "text": "Explore deeper into the forest.",
+                "nextNodeID": "210"
+            },
+            {
+                "text": "Return home immediately.",
+                "nextNodeID": "211"
+            },
+            {
+                "text": "Ask the wise old man for guidance.",
+                "nextNodeID": "212"
+            }
+        ]
+    },
+    {
+        "id": "210",
+        "text": "You discover a hidden treasure and become incredibly wealthy."
+    },
+    {
+        "id": "211",
+        "text": "Upon returning, you find your village has been ravaged by an unknown enemy. You must now seek revenge."
+    },
+    {
+        "id": "212",
+        "text": "The wise old man reveals that the true quest lies within yourself, and you embark on a journey of self-discovery."
     },
     {
         "id": "22",
-        "text": "\"In your haste, you trip over something and set off an alarm. Security guards rush in and capture you.\""
+        "text": "The giant ant discovers your deceit and attacks you, causing you to fail this part of your adventure.",
+        "choices": [
+            {
+                "text": "Fight the ant",
+                "nextNodeID": "220"
+            },
+            {
+                "text": "Run away from the ant",
+                "nextNodeID": "221"
+            },
+            {
+                "text": "Try to reason with the ant",
+                "nextNodeID": "222"
+            }
+        ]
     },
     {
-        "depth": 2,
-        "title": "Untitled Story"
+        "id": "220",
+        "text": "You manage to defeat the giant ant, but it's not easy. You find a hidden passage behind its nest."
+    },
+    {
+        "id": "221",
+        "text": "The ants give chase as you run through their colony. You narrowly escape and continue your adventure elsewhere."
+    },
+    {
+        "id": "222",
+        "text": "To your surprise, the ant listens to your plea for mercy. It lets you pass, but warns that if it ever catches you lying again, there will be consequences."
+    },
+    {
+        "depth": 3,
+        "title": "Ant Beach: Reloaded"
     }
 ]
