@@ -63,7 +63,7 @@ while isinstance(finalDepth, int) == False or finalDepth < 1:
     except ValueError: pass
 printGreen("Generating story. This may take a while.")
 
-system_template = "A helpful generative AI that specializes in writing stories is chatting with a curious user who wants it to write some content l his choose-your-own-adventure game."
+system_template = "A helpful generative AI that specializes in writing stories is chatting with a curious user who wants it to write some content for their choose-your-own-adventure game."
 
 def createStory(id='', prevGenStories=[]):
     global currentStory
