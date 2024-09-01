@@ -1,6 +1,7 @@
 let currentID = '';
 let storyData = [];
 let currentNode = {};
+// Replace the below URL with a URL that links to your raw story JSON
 const storyURL = "https://yahahama.github.io/AICYOA/story.json";
 
 const title = document.getElementById('title');
