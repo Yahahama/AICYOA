@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "aicyoa"
+version = "0.1.0"
+description = "A project that attempts to create choose-your-own-adventure interactive game stories using an AI, as well as displaying those stories in the browser."
+authors = ["Amika <92111982+Yahahama@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gpt4all = "2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
