@@ -36,12 +36,14 @@ def printRed(text, *args, **kwargs): print("\033[91m{}\033[00m".format(text), *a
 
 printGreen("Please wait, loading...")
 
-# Hardcoded paths for myself
-if platform == "win32": modelPath = "C:/Users/rokso/AppData/Local/nomic.ai/GPT4All/"
-elif platform == "darwin": modelPath = "/Users/abibolov27/Library/Application Support/nomic.ai/GPT4All/"
-else: raise Exception("Unsupported OS: %s" % platform)
+# if platform == "win32": modelPath = "C:/Users/rokso/AppData/Local/nomic.ai/GPT4All/"
+# elif platform == "darwin": modelPath = "/Users/abibolov27/Library/Application Support/nomic.ai/GPT4All/"
+# else: raise Exception("Unsupported OS: %s" % platform)
 
-model = GPT4All("Nous-Hermes-2-Mistral-7B-DPO.Q4_0.gguf", modelPath)
+modelPath = "PUT_YOUR_MODEL_PATH_HERE"
+
+# model = GPT4All("Nous-Hermes-2-Mistral-7B-DPO.Q4_0.gguf", modelPath)
+model = GPT4All("PUT_YOUR_MODEL_NAME_HERE", modelPath)
 printGreen("Model loaded!")
 
 storypath = os.path.join(os.path.dirname(__file__), "story.json")
@@ -79,9 +81,9 @@ def createStory(id='', prevGenStories=[]):
     if currentDepth != finalDepth:
         # If we're at second-to-last depth, prompt attempts to generate conclusions rather than continuations
         if currentDepth == finalDepth - 1:
-            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story conclusions each surrounded by quotes and seperated by a whitespace. Use this form, making sure to fill in the quotation marks with real content: CHOICES: \"\" \"\" \"\" STORIES: \"\" \"\" \"\"\nAI: "
+            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks (\", not \"\") and separated by a whitespace. After all three are completed, write three corresponding story conclusions each surrounded by quotes and seperated by a whitespace. Use this form, making sure to fill in each one of the quotation marks with real content, leaving none empty: CHOICES: \"\" \"\" \"\" STORIES: \"\" \"\" \"\"\nAI: "
         else:
-            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks and separated by a whitespace. After all three are completed, write three corresponding story continuations each surrounded by quotes and seperated by a whitespace. Use this form, making sure to fill in the quotation marks with real content: CHOICES: \"\" \"\" \"\" CONCLUSIONS: \"\" \"\" \"\"\nAI: "
+            prompt_template = "USER: Hi, I've got a snippet of a CYOA game's story here: \"{0}\" I need you to write three choices to give the player at this point, each choice surrounded by quotation marks (\", not \"\") and separated by a whitespace. After all three are completed, write three corresponding story continuations each surrounded by quotes and seperated by a whitespace. Use this form, making sure to fill in each one of the quotation marks with real content, leaving none empty: CHOICES: \"\" \"\" \"\" CONCLUSIONS: \"\" \"\" \"\"\nAI: "
         printGreen("Generating node with ID \"%s\"" % id)
         with model.chat_session(system_template, prompt_template):
             genChoices = []
