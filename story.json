@@ -1,348 +1,1050 @@
 [
     {
         "id": "",
-        "text": "You wake up on a beach with only a butter knife, two thick wooly socks, and a beat-up set of clothes. An ant the size of a horse turns its massive head to see you and begins to charge!",
+        "text": "You are in a dark room. You can't see anything.",
         "choices": [
             {
-                "text": "Run towards the sea",
+                "text": "Feel around the room for objects",
                 "nextNodeID": "0"
             },
             {
-                "text": "Throw the butter knife at the ant",
+                "text": "Shout out loud hoping someone hears you",
                 "nextNodeID": "1"
             },
             {
-                "text": "Try to reason with the giant ant",
+                "text": "Wait patiently and hope your eyes adjust to the darkness",
                 "nextNodeID": "2"
             }
         ]
     },
     {
         "id": "0",
-        "text": "You reach the water's edge and notice a small boat tied up. You jump in and paddle away, hoping to find help.",
+        "text": "You find a flashlight in your pocket, which helps you navigate the room.",
         "choices": [
             {
-                "text": "Follow the river north",
+                "text": "Explore further into the room",
                 "nextNodeID": "00"
             },
             {
-                "text": "Ask for help at the nearest village",
+                "text": "Use the flashlight on the wall",
                 "nextNodeID": "01"
             },
             {
-                "text": "Continue paddling until you find land",
+                "text": "Search for a source of power",
                 "nextNodeID": "02"
             }
         ]
     },
     {
         "id": "00",
-        "text": "You reach a bustling town where people are eager to assist.",
+        "text": "You find an old journal, its pages filled with cryptic notes.",
         "choices": [
             {
-                "text": "Investigate the commotion",
+                "text": "Investigate further",
                 "nextNodeID": "000"
             },
             {
-                "text": "Ask for directions from an old woman",
+                "text": "Ignore it for now",
                 "nextNodeID": "001"
             },
             {
-                "text": "Befriend a group of children",
+                "text": "Take it with you",
                 "nextNodeID": "002"
             }
         ]
     },
     {
         "id": "000",
-        "text": "You discover a hidden treasure map."
+        "text": "The notes lead to a hidden map.",
+        "choices": [
+            {
+                "text": "Follow the map north",
+                "nextNodeID": "0000"
+            },
+            {
+                "text": "Search for clues around you",
+                "nextNodeID": "0001"
+            },
+            {
+                "text": "Ask someone nearby for help",
+                "nextNodeID": "0002"
+            }
+        ]
+    },
+    {
+        "id": "0000",
+        "text": "The map leads you to an ancient temple filled with treasure."
+    },
+    {
+        "id": "0001",
+        "text": "You find a key that unlocks a secret door."
+    },
+    {
+        "id": "0002",
+        "text": "Someone gives you valuable information about your quest."
     },
     {
         "id": "001",
-        "text": "You find your way to the king's palace."
+        "text": "You forget about the journal and continue on your journey.",
+        "choices": [
+            {
+                "text": "Explore the cave system further",
+                "nextNodeID": "0010"
+            },
+            {
+                "text": "Follow the sound of rushing water",
+                "nextNodeID": "0011"
+            },
+            {
+                "text": "Search for any clues or hints about the journal",
+                "nextNodeID": "0012"
+            }
+        ]
+    },
+    {
+        "id": "0010",
+        "text": "You discover a hidden chamber filled with ancient artifacts."
+    },
+    {
+        "id": "0011",
+        "text": "You find yourself in front of an enormous waterfall, but you can't see any way around it."
+    },
+    {
+        "id": "0012",
+        "text": "After searching through the area, you come across another journal entry that seems to describe your own experiences. It ends abruptly and mysteriously."
     },
     {
         "id": "002",
-        "text": "The children lead you to a secret underground hideout."
+        "text": "A mysterious figure approaches, asking if they can help.",
+        "choices": [
+            {
+                "text": "Accept their help",
+                "nextNodeID": "0020"
+            },
+            {
+                "text": "Ignore them",
+                "nextNodeID": "0021"
+            },
+            {
+                "text": "Ask for more information",
+                "nextNodeID": "0022"
+            }
+        ]
+    },
+    {
+        "id": "0020",
+        "text": "You discover a hidden treasure."
+    },
+    {
+        "id": "0021",
+        "text": "The mysterious figure turns out to be an enemy spy, and you are captured."
+    },
+    {
+        "id": "0022",
+        "text": "They lead you to safety from pursuing enemies."
     },
     {
         "id": "01",
-        "text": "The river leads you into a dead end, and you must turn back.",
+        "text": "The beam from your flashlight reveals a hidden door behind the bookshelf.",
         "choices": [
             {
-                "text": "Follow the river upstream",
+                "text": "Open the door",
                 "nextNodeID": "010"
             },
             {
-                "text": "Search for another way around",
+                "text": "Search for a secret switch",
                 "nextNodeID": "011"
             },
             {
-                "text": "Cross the river and explore further",
+                "text": "Avoid the door altogether",
                 "nextNodeID": "012"
             }
         ]
     },
     {
         "id": "010",
-        "text": "You find a hidden cave containing an ancient artifact."
+        "text": "The room beyond is filled with ancient artifacts and treasures.",
+        "choices": [
+            {
+                "text": "Examine the artifacts closely",
+                "nextNodeID": "0100"
+            },
+            {
+                "text": "Search for hidden traps or pitfalls",
+                "nextNodeID": "0101"
+            },
+            {
+                "text": "Grab one of the treasures and leave",
+                "nextNodeID": "0102"
+            }
+        ]
+    },
+    {
+        "id": "0100",
+        "text": "You uncover a secret map leading to another room."
+    },
+    {
+        "id": "0101",
+        "text": "You find a hidden passageway that leads you deeper into the temple."
+    },
+    {
+        "id": "0102",
+        "text": "As soon as you grab the treasure, alarms sound and guards rush in."
     },
     {
         "id": "011",
-        "text": "You discover a secret path that leads you to safety."
+        "text": "You find a hidden lever that opens another door nearby.",
+        "choices": [
+            {
+                "text": "Explore behind the door",
+                "nextNodeID": "0110"
+            },
+            {
+                "text": "Pull the lever again",
+                "nextNodeID": "0111"
+            },
+            {
+                "text": "Leave the hidden lever alone",
+                "nextNodeID": "0112"
+            }
+        ]
+    },
+    {
+        "id": "0110",
+        "text": "You find a secret room filled with treasure."
+    },
+    {
+        "id": "0111",
+        "text": "The lever triggers a trap, and you narrowly escape."
+    },
+    {
+        "id": "0112",
+        "text": "The hidden lever turns out to be a dead end."
     },
     {
         "id": "012",
-        "text": "The river's current becomes too strong, and you are swept away downstream."
+        "text": "As you turn away, the door creaks open on its own.",
+        "choices": [
+            {
+                "text": "Investigate the source of the sound",
+                "nextNodeID": "0120"
+            },
+            {
+                "text": "Run away as fast as you can",
+                "nextNodeID": "0121"
+            },
+            {
+                "text": "Stay and see what happens",
+                "nextNodeID": "0122"
+            }
+        ]
+    },
+    {
+        "id": "0120",
+        "text": "You discover a hidden passage leading to a secret room."
+    },
+    {
+        "id": "0121",
+        "text": "You escape unharmed, but lose valuable items in your haste."
+    },
+    {
+        "id": "0122",
+        "text": "The door slams shut behind you, trapping you inside."
     },
     {
         "id": "02",
-        "text": "After hours of paddling, you spot some buildings in the distance.",
+        "text": "A battery pack lies in the corner, just what you need to power up the flashlight.",
         "choices": [
             {
-                "text": "Investigate the buildings",
+                "text": "Check the battery pack for damage",
                 "nextNodeID": "020"
             },
             {
-                "text": "Continue paddling towards them",
+                "text": "Connect the flashlight to the battery pack",
                 "nextNodeID": "021"
             },
             {
-                "text": "Turn back and leave",
+                "text": "Search for a spare battery",
                 "nextNodeID": "022"
             }
         ]
     },
     {
         "id": "020",
-        "text": "You discover a hidden village that needs your help."
+        "text": "The flashlight powers up, revealing a dark and eerie room.",
+        "choices": [
+            {
+                "text": "Explore further into the room",
+                "nextNodeID": "0200"
+            },
+            {
+                "text": "Investigate the mysterious object in the center of the room",
+                "nextNodeID": "0201"
+            },
+            {
+                "text": "Run away as fast as possible",
+                "nextNodeID": "0202"
+            }
+        ]
+    },
+    {
+        "id": "0200",
+        "text": "You find a hidden passage leading to an ancient treasure."
+    },
+    {
+        "id": "0201",
+        "text": "The mysterious object turns out to be a trap, and you are captured by unknown assailants."
+    },
+    {
+        "id": "0202",
+        "text": "As you run, you trip over something and fall. You hear footsteps approaching, but when you look up, the room is empty."
     },
     {
         "id": "021",
-        "text": "The buildings turn out to be an abandoned fort, but you find useful supplies inside."
+        "text": "The flashlight remains unresponsive despite being connected to the damaged battery pack.",
+        "choices": [
+            {
+                "text": "Try another battery pack",
+                "nextNodeID": "0210"
+            },
+            {
+                "text": "Use your phone as a light source",
+                "nextNodeID": "0211"
+            },
+            {
+                "text": "Search for spare batteries around you",
+                "nextNodeID": "0212"
+            }
+        ]
+    },
+    {
+        "id": "0210",
+        "text": "You find a working battery and the flashlight comes back to life. You continue exploring."
+    },
+    {
+        "id": "0211",
+        "text": "Your phone's dim light reveals a hidden passageway. You follow it, leading to an ancient treasure chamber!"
+    },
+    {
+        "id": "0212",
+        "text": "You come across another damaged but potentially usable battery pack. After some improvisation with your tools, you manage to get it working. The flashlight flickers back on and you can continue exploring."
     },
     {
         "id": "022",
-        "text": "As you turn back, you notice smoke on the horizon. You realize too late that you should have sought help."
+        "text": "You find an extra battery in your backpack and power up the flashlight.",
+        "choices": [
+            {
+                "text": "Explore the dark cave",
+                "nextNodeID": "0220"
+            },
+            {
+                "text": "Search for more batteries",
+                "nextNodeID": "0221"
+            },
+            {
+                "text": "Set up camp and rest",
+                "nextNodeID": "0222"
+            }
+        ]
+    },
+    {
+        "id": "0220",
+        "text": "You discover a hidden underground lake, but it's too dangerous to venture closer."
+    },
+    {
+        "id": "0221",
+        "text": "You find enough batteries to last you through your journey. You feel relieved as your flashlight flickers back on."
+    },
+    {
+        "id": "0222",
+        "text": "After resting, you wake up feeling refreshed and ready for the next challenge."
     },
     {
         "id": "1",
-        "text": "The knife hits the ant's head but doesn't seem to faze it. It charges faster!",
+        "text": "A voice responds from outside the door. They say they'll help but need more information about what kind of danger you are in.",
         "choices": [
             {
-                "text": "Run away",
+                "text": "Ask for more details about their identity",
                 "nextNodeID": "10"
             },
             {
-                "text": "Throw another knife",
+                "text": "Request they provide proof of their abilities",
                 "nextNodeID": "11"
             },
             {
-                "text": "Try to grab it",
+                "text": "Agree and open the door",
                 "nextNodeID": "12"
             }
         ]
     },
     {
         "id": "10",
-        "text": "The ant speeds past you, and you barely manage to avoid getting stung. You decide that this adventure is too dangerous for your taste.",
+        "text": "The voice introduces themselves as a former adventurer, now turned recluse. They show you an old journal filled with notes on various monsters.",
         "choices": [
             {
-                "text": "Turn back now",
+                "text": "Investigate the journal further",
                 "nextNodeID": "100"
             },
             {
-                "text": "Find another way around",
+                "text": "Ask the recluse about their past adventures",
                 "nextNodeID": "101"
             },
             {
-                "text": "Face your fears and continue forward",
+                "text": "Confront the monster mentioned on one of the pages",
                 "nextNodeID": "102"
             }
         ]
     },
     {
         "id": "100",
-        "text": "You safely return home, never to embark on such a perilous journey again."
+        "text": "You find notes on a powerful dragon, which you decide to seek out.",
+        "choices": [
+            {
+                "text": "Follow the trail of burnt grass",
+                "nextNodeID": "1000"
+            },
+            {
+                "text": "Ask a local villager for information",
+                "nextNodeID": "1001"
+            },
+            {
+                "text": "Search the dragon's lair",
+                "nextNodeID": "1002"
+            }
+        ]
+    },
+    {
+        "id": "1000",
+        "text": "You discover an ancient map leading to the dragon's location."
+    },
+    {
+        "id": "1001",
+        "text": "The villager tells you that the dragon is known to be peaceful and has not been seen in years."
+    },
+    {
+        "id": "1002",
+        "text": "Inside the lair, you find a hidden treasure chest containing clues about the dragon's whereabouts."
     },
     {
         "id": "101",
-        "text": "After some time, you reach the end of the adventure, having encountered no further danger or obstacles."
+        "text": "The recluse tells tales of glory and defeat. You learn valuable lessons from them.",
+        "choices": [
+            {
+                "text": "Investigate further",
+                "nextNodeID": "1010"
+            },
+            {
+                "text": "Ask for guidance",
+                "nextNodeID": "1011"
+            },
+            {
+                "text": "Leave immediately",
+                "nextNodeID": "1012"
+            }
+        ]
+    },
+    {
+        "id": "1010",
+        "text": "You uncover hidden secrets about the recluse's past, which prove useful later on."
+    },
+    {
+        "id": "1011",
+        "text": "The recluse shares their wisdom and helps you make a crucial decision in your journey."
+    },
+    {
+        "id": "1012",
+        "text": "As you flee, you notice a shadowy figure following you. You realize that staying would have been safer than leaving."
     },
     {
         "id": "102",
-        "text": "As you press onward, you come face-to-face with an even more dangerous situation. You narrowly escape with your life and complete the adventure, feeling proud of yourself for overcoming your fears."
+        "text": "The monster attacks but is defeated thanks to your newfound knowledge.",
+        "choices": [
+            {
+                "text": "Search for more information about monsters.",
+                "nextNodeID": "1020"
+            },
+            {
+                "text": "Fight the monster using your current abilities.",
+                "nextNodeID": "1021"
+            },
+            {
+                "text": "Run away and hide until help arrives.",
+                "nextNodeID": "1022"
+            }
+        ]
+    },
+    {
+        "id": "1020",
+        "text": "You find a hidden journal with detailed descriptions of similar creatures, giving you an edge in future encounters. The player continues on their adventure, feeling more confident and prepared."
+    },
+    {
+        "id": "1021",
+        "text": "The monster is weakened by your attacks but manages to escape into the shadows. You continue on your journey, wondering what other dangers might be lurking around the corner."
+    },
+    {
+        "id": "1022",
+        "text": "You successfully evade the creature and find a safe place to hide. However, you soon realize that you've led it straight to an unsuspecting village. The player must now decide whether to warn the villagers or continue on their own journey."
     },
     {
         "id": "11",
-        "text": "You throw the second knife with precision, hitting the ant squarely in its head. It falls lifeless at your feet.",
+        "text": "The voice produces a glowing orb that crackles with energy. You can feel its power.",
         "choices": [
             {
-                "text": "Examine the ant's body",
+                "text": "Approach the orb cautiously",
                 "nextNodeID": "110"
             },
             {
-                "text": "Continue down the path",
+                "text": "Try to touch it without warning",
                 "nextNodeID": "111"
             },
             {
-                "text": "Search for more weapons",
+                "text": "Run away as fast as possible",
                 "nextNodeID": "112"
             }
         ]
     },
     {
         "id": "110",
-        "text": "You find a small, intricately carved amulet around its neck."
+        "text": "The orb hums softly, welcoming you closer.",
+        "choices": [
+            {
+                "text": "Take a step closer",
+                "nextNodeID": "1100"
+            },
+            {
+                "text": "Gently reach out your hand",
+                "nextNodeID": "1101"
+            },
+            {
+                "text": "Stand still and observe",
+                "nextNodeID": "1102"
+            }
+        ]
+    },
+    {
+        "id": "1100",
+        "text": "The orb hums louder, beckoning you to take it in your hands."
+    },
+    {
+        "id": "1101",
+        "text": "A bright flash of light engulfs the room as the orb repels your touch."
+    },
+    {
+        "id": "1102",
+        "text": "The orb's hum intensifies, revealing intricate patterns etched into its surface."
     },
     {
         "id": "111",
-        "text": "As you continue walking, you come across an old cabin. You decide to investigate it."
+        "text": "A surge of energy knocks you back. The voice seems displeased with your rash actions.",
+        "choices": [
+            {
+                "text": "Turn tail and run",
+                "nextNodeID": "1110"
+            },
+            {
+                "text": "Stand your ground and fight",
+                "nextNodeID": "1111"
+            },
+            {
+                "text": "Try to reason with the voice",
+                "nextNodeID": "1112"
+            }
+        ]
+    },
+    {
+        "id": "1110",
+        "text": "You narrowly escape, but wonder what you'll face next."
+    },
+    {
+        "id": "1111",
+        "text": "The battle is long and hard-fought, but ultimately you emerge victorious."
+    },
+    {
+        "id": "1112",
+        "text": "The voice listens to your plea for understanding and calms down. It explains that it was only testing you."
     },
     {
         "id": "112",
-        "text": "While searching, you discover another knife and two arrows hidden in a hollowed-out tree trunk nearby."
+        "text": "You hear a distant laugh and the sound of footsteps fading into the distance.",
+        "choices": [
+            {
+                "text": "Follow the footsteps",
+                "nextNodeID": "1120"
+            },
+            {
+                "text": "Investigate the laugh",
+                "nextNodeID": "1121"
+            },
+            {
+                "text": "Stay put and wait for more information",
+                "nextNodeID": "1122"
+            }
+        ]
+    },
+    {
+        "id": "1120",
+        "text": "You find a hidden door behind some bushes. It leads to an underground lair where you discover a secret society planning something sinister."
+    },
+    {
+        "id": "1121",
+        "text": ""
+    },
+    {
+        "id": "1122",
+        "text": " "
     },
     {
         "id": "12",
-        "text": "You reach out and grab the ant, only for it to bite down on your finger, injecting you with a powerful venom.",
+        "text": "The door creaks open to reveal an elderly figure holding a staff adorned with ancient symbols.",
         "choices": [
             {
-                "text": "You crush the ant, ending its life.",
+                "text": "Investigate the symbols on the staff",
                 "nextNodeID": "120"
             },
             {
-                "text": "You flick the ant away from you.",
+                "text": "Ask the elderly figure who they are",
                 "nextNodeID": "121"
             },
             {
-                "text": "You carefully remove the ant using tweezers.",
+                "text": "Run away and hide",
                 "nextNodeID": "122"
             }
         ]
     },
     {
         "id": "120",
-        "text": "The venom quickly spreads through your body, causing intense pain and eventually death. Game Over."
+        "text": "The ancient symbols reveal a map to a hidden treasure.",
+        "choices": [
+            {
+                "text": "Follow the map north",
+                "nextNodeID": "1200"
+            },
+            {
+                "text": "Ask a local for directions",
+                "nextNodeID": "1201"
+            },
+            {
+                "text": "Use your intuition and trust your gut",
+                "nextNodeID": "1202"
+            }
+        ]
+    },
+    {
+        "id": "1200",
+        "text": "You find the treasure, but it's cursed! You must return it to its resting place."
+    },
+    {
+        "id": "1201",
+        "text": "The local gives you incorrect information on purpose. You waste time following their advice and miss the opportunity."
+    },
+    {
+        "id": "1202",
+        "text": "Your instincts lead you to a dead end. But as you turn back, you notice something glinting in the corner of your eye. It's the treasure!"
     },
     {
         "id": "121",
-        "text": "The ant's bite was harmless without its venom. You continue on your adventure unharmed."
+        "text": "The elderly figure introduces themselves as an old friend, but warns you of danger ahead.",
+        "choices": [
+            {
+                "text": "Follow your friend's advice",
+                "nextNodeID": "1210"
+            },
+            {
+                "text": "Investigate alone",
+                "nextNodeID": "1211"
+            },
+            {
+                "text": "Ask for help from nearby villagers",
+                "nextNodeID": "1212"
+            }
+        ]
+    },
+    {
+        "id": "1210",
+        "text": "You and your old friend successfully avoid the danger, thanks to their guidance."
+    },
+    {
+        "id": "1211",
+        "text": "The danger catches you off guard, but your quick thinking saves the day!"
+    },
+    {
+        "id": "1212",
+        "text": "Curious about what might have happened if you had accepted help, you never find out as a sudden ambush takes you by surprise."
     },
     {
         "id": "122",
-        "text": "With the ant safely removed, you can now examine it for clues or crush it to extract any useful substances. Continue?"
+        "text": "You find safety in hiding, but miss out on valuable information.",
+        "choices": [
+            {
+                "text": "Search for clues",
+                "nextNodeID": "1220"
+            },
+            {
+                "text": "Ask someone for help",
+                "nextNodeID": "1221"
+            },
+            {
+                "text": "Stay hidden and wait",
+                "nextNodeID": "1222"
+            }
+        ]
+    },
+    {
+        "id": "1220",
+        "text": "You find a secret map leading to a treasure."
+    },
+    {
+        "id": "1221",
+        "text": "Someone else finds the treasure before you can act on your newfound information."
+    },
+    {
+        "id": "1222",
+        "text": "No one ever comes, but you eventually hear muffled voices in the distance. You decide to follow them, hoping for more clues."
     },
     {
         "id": "2",
-        "text": "To your surprise, the giant ant listens to you and explains that it has been guarding a treasure chest buried nearby. You can work together to retrieve it or continue on your original quest.",
+        "text": "After several minutes, your eyes adjust to the darkness and you can make out some shapes.",
         "choices": [
             {
-                "text": "Work together with the giant ant",
+                "text": "Explore further into the darkness",
                 "nextNodeID": "20"
             },
             {
-                "text": "Continue on your original quest alone",
+                "text": "Find something to light your way",
                 "nextNodeID": "21"
             },
             {
-                "text": "Try to deceive the giant ant",
+                "text": "Wait for your eyes to adjust more fully",
                 "nextNodeID": "22"
             }
         ]
     },
     {
         "id": "20",
-        "text": "You and the giant ant successfully retrieve the treasure chest, sharing it equally.",
+        "text": "",
         "choices": [
             {
-                "text": "Investigate the chest further",
+                "text": "Enter the dark cave",
                 "nextNodeID": "200"
             },
             {
-                "text": "Follow the giant ant back home",
+                "text": "Ask the old woman for directions",
                 "nextNodeID": "201"
             },
             {
-                "text": "Divide the treasure and part ways",
+                "text": "Follow the river upstream",
                 "nextNodeID": "202"
             }
         ]
     },
     {
         "id": "200",
-        "text": "The chest contains a map leading to more treasures."
+        "text": "You discover a hidden treasure in the cave.",
+        "choices": [
+            {
+                "text": "Examine the treasure closely",
+                "nextNodeID": "2000"
+            },
+            {
+                "text": "Take one of the glittering gems from the pile",
+                "nextNodeID": "2001"
+            },
+            {
+                "text": "Leave the cave immediately and return home",
+                "nextNodeID": "2002"
+            }
+        ]
+    },
+    {
+        "id": "2000",
+        "text": "You find a hidden message within the treasure, leading you to another location."
+    },
+    {
+        "id": "2001",
+        "text": "The gem grants you good fortune for the rest of your journey."
+    },
+    {
+        "id": "2002",
+        "text": "Upon leaving the cave, you are ambushed by bandits who had been guarding the treasure. You must fight them off or try to negotiate with them."
     },
     {
         "id": "201",
-        "text": "The giant ant reveals its true form as an evil sorcerer who plans to conquer the world with your newfound wealth!"
+        "text": "The old woman gives you a map to an ancient temple.",
+        "choices": [
+            {
+                "text": "Use your knowledge of ancient symbols to decipher the map.",
+                "nextNodeID": "2010"
+            },
+            {
+                "text": "Ask for help from an expert on ancient temples.",
+                "nextNodeID": "2011"
+            },
+            {
+                "text": "Ignore the old woman's advice and follow your own instincts.",
+                "nextNodeID": "2012"
+            }
+        ]
+    },
+    {
+        "id": "2010",
+        "text": ""
+    },
+    {
+        "id": "2011",
+        "text": " "
+    },
+    {
+        "id": "2012",
+        "text": " The expert gives you valuable insights into the history of the ancient temple, helping you navigate potential dangers along the way."
     },
     {
         "id": "202",
-        "text": "You both go your separate ways, never to meet again."
+        "text": "You find a lost tribe living by the river, who offer their guidance.",
+        "choices": [
+            {
+                "text": "Accept their guidance",
+                "nextNodeID": "2020"
+            },
+            {
+                "text": "Refuse their help",
+                "nextNodeID": "2021"
+            },
+            {
+                "text": "Ask for directions only",
+                "nextNodeID": "2022"
+            }
+        ]
+    },
+    {
+        "id": "2020",
+        "text": "You learn valuable survival skills from the tribe and make new friends."
+    },
+    {
+        "id": "2021",
+        "text": "The tribe becomes offended by your refusal, making future interactions difficult."
+    },
+    {
+        "id": "2022",
+        "text": "With the tribe's directions in hand, you navigate around a dangerous area successfully."
     },
     {
         "id": "21",
-        "text": "You complete your original quest and find great success in doing so.",
+        "text": "",
         "choices": [
             {
-                "text": "Explore deeper into the forest.",
+                "text": "Search for clues in the abandoned house",
                 "nextNodeID": "210"
             },
             {
-                "text": "Return home immediately.",
+                "text": "Follow the trail of footprints",
                 "nextNodeID": "211"
             },
             {
-                "text": "Ask the wise old man for guidance.",
+                "text": "Ask the mysterious stranger for help",
                 "nextNodeID": "212"
             }
         ]
     },
     {
         "id": "210",
-        "text": "You discover a hidden treasure and become incredibly wealthy."
+        "text": "",
+        "choices": [
+            {
+                "text": "Explore the dark cave",
+                "nextNodeID": "2100"
+            },
+            {
+                "text": "Ask the old man for directions",
+                "nextNodeID": "2101"
+            },
+            {
+                "text": "Follow the trail of footprints",
+                "nextNodeID": "2102"
+            }
+        ]
+    },
+    {
+        "id": "2100",
+        "text": "You find a hidden treasure and escape unscathed."
+    },
+    {
+        "id": "2101",
+        "text": "The old man leads you to safety, but warns you of danger ahead."
+    },
+    {
+        "id": "2102",
+        "text": "You discover an abandoned village where everyone has vanished without a trace."
     },
     {
         "id": "211",
-        "text": "Upon returning, you find your village has been ravaged by an unknown enemy. You must now seek revenge."
+        "text": "",
+        "choices": [
+            {
+                "text": "Enter the dark cave",
+                "nextNodeID": "2110"
+            },
+            {
+                "text": "Ask for directions from a local villager",
+                "nextNodeID": "2111"
+            },
+            {
+                "text": "Follow the river upstream",
+                "nextNodeID": "2112"
+            }
+        ]
+    },
+    {
+        "id": "2110",
+        "text": "You find an ancient artifact that grants you unimaginable power."
+    },
+    {
+        "id": "2111",
+        "text": "You learn of a hidden temple deep in the forest, and discover its secret treasure."
+    },
+    {
+        "id": "2112",
+        "text": "You come across a lost tribe who welcomes you as their new leader."
     },
     {
         "id": "212",
-        "text": "The wise old man reveals that the true quest lies within yourself, and you embark on a journey of self-discovery."
+        "text": "",
+        "choices": [
+            {
+                "text": "Enter the dark forest",
+                "nextNodeID": "2120"
+            },
+            {
+                "text": "Ask for directions from the old man at the crossroads",
+                "nextNodeID": "2121"
+            },
+            {
+                "text": "Search for clues around the abandoned village",
+                "nextNodeID": "2122"
+            }
+        ]
+    },
+    {
+        "id": "2120",
+        "text": "You find a hidden map deep within the forest."
+    },
+    {
+        "id": "2121",
+        "text": "The old man gives you an ominous warning about what lies ahead."
+    },
+    {
+        "id": "2122",
+        "text": "You discover a cryptic message written on a tattered piece of parchment."
     },
     {
         "id": "22",
-        "text": "The giant ant discovers your deceit and attacks you, causing you to fail this part of your adventure.",
+        "text": "",
         "choices": [
             {
-                "text": "Fight the ant",
+                "text": "Turn left into the dimly lit hallway",
                 "nextNodeID": "220"
             },
             {
-                "text": "Run away from the ant",
+                "text": "Continue straight down the main corridor",
                 "nextNodeID": "221"
             },
             {
-                "text": "Try to reason with the ant",
+                "text": "",
                 "nextNodeID": "222"
             }
         ]
     },
     {
         "id": "220",
-        "text": "You manage to defeat the giant ant, but it's not easy. You find a hidden passage behind its nest."
+        "text": "",
+        "choices": [
+            {
+                "text": "Enter the dark cave",
+                "nextNodeID": "2200"
+            },
+            {
+                "text": "Ask directions from the old man",
+                "nextNodeID": "2201"
+            },
+            {
+                "text": "Search for clues around the campsite",
+                "nextNodeID": "2202"
+            }
+        ]
+    },
+    {
+        "id": "2200",
+        "text": "You discover a hidden treasure inside the cave."
+    },
+    {
+        "id": "2201",
+        "text": "The old man gives you misleading information, wasting your time."
+    },
+    {
+        "id": "2202",
+        "text": "Your search leads to finding an ancient map that reveals the location of the final destination."
     },
     {
         "id": "221",
-        "text": "The ants give chase as you run through their colony. You narrowly escape and continue your adventure elsewhere."
+        "text": "",
+        "choices": [
+            {
+                "text": "Explore the dark cave",
+                "nextNodeID": "2210"
+            },
+            {
+                "text": "Ask the old man for directions",
+                "nextNodeID": "2211"
+            },
+            {
+                "text": "Follow the mysterious trail",
+                "nextNodeID": "2212"
+            }
+        ]
+    },
+    {
+        "id": "2210",
+        "text": "You find a hidden treasure and escape unscathed."
+    },
+    {
+        "id": "2211",
+        "text": "The old man leads you to safety, but warns of danger ahead."
+    },
+    {
+        "id": "2212",
+        "text": "You discover an ancient ruin and learn its secrets."
     },
     {
         "id": "222",
-        "text": "To your surprise, the ant listens to your plea for mercy. It lets you pass, but warns that if it ever catches you lying again, there will be consequences."
+        "text": "Try to force open the door",
+        "choices": [
+            {
+                "text": "Use your brute strength",
+                "nextNodeID": "2220"
+            },
+            {
+                "text": "Try picking the lock",
+                "nextNodeID": "2221"
+            },
+            {
+                "text": "Knock politely and wait for an answer",
+                "nextNodeID": "2222"
+            }
+        ]
     },
     {
-        "depth": 3,
-        "title": "Ant Beach: Reloaded"
+        "id": "2220",
+        "text": "You manage to force open the door, revealing a darkened room with no apparent occupants."
+    },
+    {
+        "id": "2221",
+        "text": "The lock clicks open as you slip in the makeshift pick. Inside, you find a small safe resting on a desk."
+    },
+    {
+        "id": "2222",
+        "text": "A soft voice thanks you for your patience and invites you inside. The room is cozy and filled with bookshelves."
+    },
+    {
+        "depth": 4,
+        "title": "The Dark Room Story"
     }
 ]

@@ -15,7 +15,7 @@ def extractQuote(text, n=1):
                 else:
                     quotes.append(text[start+1:j])
                     # Remove quoted string, account for possible error when start's value is 0
-                    text = (text[:start-1] + text[j:] if start != 0 else text[j:])
+                    text = (text[:start] + text[j+1:] if j != len(text) else text[j+1:])
                     start = -2
                     break
         # If start is -2, quote found and popped.
@@ -88,13 +88,14 @@ def createStory(id='', prevGenStories=[]):
             genStories = []
             # First six quotations from AI response consist of 3 generated stories and 3 generated choices
             response = model.generate(currentStory, max_tokens=800, temp=.75)
-            print(response)
+            print("INITIAL\n\n"+response)
             for i in range(len(response)):
                 try:
                     # Removes possible AI-generated double quotes before extractQuote can be affected
                     if response[i:i+2] == '\"\"': response[i+1] == ' '
                 except IndexError: pass
             response = extractQuote(response, 6)
+            print("\n\nQUOTES\n\n")
             print(response)
             if "" in response:
                 printRed("Incomplete response generated! Retrying node \"%s\"" % id)
