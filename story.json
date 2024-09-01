@@ -1,348 +1,348 @@
 [
     {
         "id": "",
-        "text": "You wake up on a beach with only a butter knife, two thick wooly socks, and a beat-up set of clothes. An ant the size of a horse turns its massive head to see you and begins to charge!",
+        "text": "You're on lunch break and waiting in the line of your favorite deli. Break ends in two minutes, and the line seems like it's going to take forever to end especially because the family at its front is taking forever to decide what they want.",
         "choices": [
             {
-                "text": "Run towards the sea",
+                "text": "Ask the family if they need help choosing,",
                 "nextNodeID": "0"
             },
             {
-                "text": "Throw the butter knife at the ant",
+                "text": "Cut in line and hope for forgiveness later,",
                 "nextNodeID": "1"
             },
             {
-                "text": "Try to reason with the giant ant",
+                "text": "Find an alternative lunch spot.",
                 "nextNodeID": "2"
             }
         ]
     },
     {
         "id": "0",
-        "text": "You reach the water's edge and notice a small boat tied up. You jump in and paddle away, hoping to find help.",
+        "text": "The family thanks you, and your break ends just as you get to the counter. You grab a sandwich quickly before rushing back to work.",
         "choices": [
             {
-                "text": "Follow the river north",
+                "text": "Stay for lunch",
                 "nextNodeID": "00"
             },
             {
-                "text": "Ask for help at the nearest village",
+                "text": "Quickly return to work without eating",
                 "nextNodeID": "01"
             },
             {
-                "text": "Continue paddling until you find land",
+                "text": "Take your sandwich on a short break",
                 "nextNodeID": "02"
             }
         ]
     },
     {
         "id": "00",
-        "text": "You reach a bustling town where people are eager to assist.",
+        "text": "You sit down and enjoy the company of your coworkers while savoring every bite.",
         "choices": [
             {
-                "text": "Investigate the commotion",
+                "text": "Take another bite",
                 "nextNodeID": "000"
             },
             {
-                "text": "Ask for directions from an old woman",
+                "text": "Start talking to your coworkers",
                 "nextNodeID": "001"
             },
             {
-                "text": "Befriend a group of children",
+                "text": "Suddenly spot something strange out of the corner of your eye",
                 "nextNodeID": "002"
             }
         ]
     },
     {
         "id": "000",
-        "text": "You discover a hidden treasure map."
+        "text": "You finish eating and strike up a conversation with your coworker about their weekend plans. The game continues."
     },
     {
         "id": "001",
-        "text": "You find your way to the king's palace."
+        "text": "Your coworkers engage you in an interesting discussion, leading to new insights on the project at hand. The game continues."
     },
     {
         "id": "002",
-        "text": "The children lead you to a secret underground hideout."
+        "text": "As you turn towards the strange object, it disappears into thin air. You feel uneasy but continue eating. The game continues with a sense of foreboding."
     },
     {
         "id": "01",
-        "text": "The river leads you into a dead end, and you must turn back.",
+        "text": "Your manager notices you're back early from lunch, but you explain that you grabbed something quick. They understand and let it slide this time.",
         "choices": [
             {
-                "text": "Follow the river upstream",
+                "text": "Go back to work",
                 "nextNodeID": "010"
             },
             {
-                "text": "Search for another way around",
+                "text": "Take a longer break next time",
                 "nextNodeID": "011"
             },
             {
-                "text": "Cross the river and explore further",
+                "text": "Apologize sincerely",
                 "nextNodeID": "012"
             }
         ]
     },
     {
         "id": "010",
-        "text": "You find a hidden cave containing an ancient artifact."
+        "text": "You return to your tasks, focusing on making up for lost time."
     },
     {
         "id": "011",
-        "text": "You discover a secret path that leads you to safety."
+        "text": "Next time you take a lunch break, make sure it's long enough that your manager won't notice any discrepancies in your schedule."
     },
     {
         "id": "012",
-        "text": "The river's current becomes too strong, and you are swept away downstream."
+        "text": "Your manager appreciates the honesty and doesn't bring up the issue again."
     },
     {
         "id": "02",
-        "text": "After hours of paddling, you spot some buildings in the distance.",
+        "text": "During your short break, you find a hidden note in your sandwich - an invitation to join a secret society. You feel intrigued and decide to investigate further.",
         "choices": [
             {
-                "text": "Investigate the buildings",
+                "text": "Investigate the secret society's headquarters",
                 "nextNodeID": "020"
             },
             {
-                "text": "Continue paddling towards them",
+                "text": "Attend an upcoming meeting as a guest",
                 "nextNodeID": "021"
             },
             {
-                "text": "Turn back and leave",
+                "text": "Ignore the invitation and continue your journey",
                 "nextNodeID": "022"
             }
         ]
     },
     {
         "id": "020",
-        "text": "You discover a hidden village that needs your help."
+        "text": "You discover that the secret society is planning to overthrow the government, but they need more members. You decide to join them."
     },
     {
         "id": "021",
-        "text": "The buildings turn out to be an abandoned fort, but you find useful supplies inside."
+        "text": "At the meeting, you learn about their plans for world domination. Shocked by this revelation, you leave immediately and report the group's intentions to the authorities."
     },
     {
         "id": "022",
-        "text": "As you turn back, you notice smoke on the horizon. You realize too late that you should have sought help."
+        "text": "As you continue your journey, you come across a hidden cave with an ancient artifact that holds the key to saving the world from certain doom."
     },
     {
         "id": "1",
-        "text": "The knife hits the ant's head but doesn't seem to faze it. It charges faster!",
+        "text": "You apologize profusely to the family and explain that you're running late for work. They let you pass, but give you dirty looks. Your break ends with no time left for lunch.",
         "choices": [
             {
-                "text": "Run away",
+                "text": "Go back inside for lunch",
                 "nextNodeID": "10"
             },
             {
-                "text": "Throw another knife",
+                "text": "Apologize again and ask if you can join them for a meal",
                 "nextNodeID": "11"
             },
             {
-                "text": "Try to grab it",
+                "text": "Quickly grab something from your car to eat on the go",
                 "nextNodeID": "12"
             }
         ]
     },
     {
         "id": "10",
-        "text": "The ant speeds past you, and you barely manage to avoid getting stung. You decide that this adventure is too dangerous for your taste.",
+        "text": "You sit down with the family, enjoying their company as they share stories of their day. You finish eating and thank them before heading back to work.",
         "choices": [
             {
-                "text": "Turn back now",
+                "text": "Investigate the mysterious noise",
                 "nextNodeID": "100"
             },
             {
-                "text": "Find another way around",
+                "text": "Ask for more information about their day",
                 "nextNodeID": "101"
             },
             {
-                "text": "Face your fears and continue forward",
+                "text": "Offer to help them with a task",
                 "nextNodeID": "102"
             }
         ]
     },
     {
         "id": "100",
-        "text": "You safely return home, never to embark on such a perilous journey again."
+        "text": "You discover it was just the wind, but you feel a strange sense of unease."
     },
     {
         "id": "101",
-        "text": "After some time, you reach the end of the adventure, having encountered no further danger or obstacles."
+        "text": "They reveal that they found an old map leading to hidden treasure. You decide to join them on their search."
     },
     {
         "id": "102",
-        "text": "As you press onward, you come face-to-face with an even more dangerous situation. You narrowly escape with your life and complete the adventure, feeling proud of yourself for overcoming your fears."
+        "text": "The family thanks you for your assistance and invites you back for dinner again soon."
     },
     {
         "id": "11",
-        "text": "You throw the second knife with precision, hitting the ant squarely in its head. It falls lifeless at your feet.",
+        "text": "The family reluctantly agrees, setting aside their displeasure for now. They invite you to join them at a nearby restaurant, where you bond over shared experiences and laughter. Eventually, you return to work feeling refreshed and recharged.",
         "choices": [
             {
-                "text": "Examine the ant's body",
+                "text": "Decide to join them for dinner",
                 "nextNodeID": "110"
             },
             {
-                "text": "Continue down the path",
+                "text": "Decline their invitation politely",
                 "nextNodeID": "111"
             },
             {
-                "text": "Search for more weapons",
+                "text": "Sneak away without telling anyone",
                 "nextNodeID": "112"
             }
         ]
     },
     {
         "id": "110",
-        "text": "You find a small, intricately carved amulet around its neck."
+        "text": "You enjoy a delightful meal with the family and learn more about each other's lives, which strengthens your bond."
     },
     {
         "id": "111",
-        "text": "As you continue walking, you come across an old cabin. You decide to investigate it."
+        "text": "The family respects your decision but feels slightly hurt that you didn't want to spend time with them. You return to work feeling somewhat guilty for not joining them."
     },
     {
         "id": "112",
-        "text": "While searching, you discover another knife and two arrows hidden in a hollowed-out tree trunk nearby."
+        "text": "You slip away unnoticed while they are distracted, but later the family confronts you about it and expresses their disappointment."
     },
     {
         "id": "12",
-        "text": "You reach out and grab the ant, only for it to bite down on your finger, injecting you with a powerful venom.",
+        "text": "You jump in your car and speed off towards the office, a granola bar in hand. As you drive, you can't help but feel guilty for not spending more time with the family, knowing that this might affect future interactions.",
         "choices": [
             {
-                "text": "You crush the ant, ending its life.",
+                "text": "Pull over and call your family",
                 "nextNodeID": "120"
             },
             {
-                "text": "You flick the ant away from you.",
+                "text": "Continue driving without distraction",
                 "nextNodeID": "121"
             },
             {
-                "text": "You carefully remove the ant using tweezers.",
+                "text": "Eat the granola bar",
                 "nextNodeID": "122"
             }
         ]
     },
     {
         "id": "120",
-        "text": "The venom quickly spreads through your body, causing intense pain and eventually death. Game Over."
+        "text": "You realize that you can still make time for them later, and they understand. You arrive at work feeling less guilty."
     },
     {
         "id": "121",
-        "text": "The ant's bite was harmless without its venom. You continue on your adventure unharmed."
+        "text": "Upon arriving at work, you find out that an important project has been delayed due to a mistake made by your team. Your family life becomes even more strained as you struggle to catch up on lost time."
     },
     {
         "id": "122",
-        "text": "With the ant safely removed, you can now examine it for clues or crush it to extract any useful substances. Continue?"
+        "text": "You reach the office just in time for your meeting and give a presentation that impresses everyone. However, when you get home, your family is upset because they feel neglected."
     },
     {
         "id": "2",
-        "text": "To your surprise, the giant ant listens to you and explains that it has been guarding a treasure chest buried nearby. You can work together to retrieve it or continue on your original quest.",
+        "text": "You find an empty deli around the corner and grab something quick. You make it back just in time before your break ends.",
         "choices": [
             {
-                "text": "Work together with the giant ant",
+                "text": "Head back to work",
                 "nextNodeID": "20"
             },
             {
-                "text": "Continue on your original quest alone",
+                "text": "Search for clues around the deli",
                 "nextNodeID": "21"
             },
             {
-                "text": "Try to deceive the giant ant",
+                "text": "Ask a co-worker what they know",
                 "nextNodeID": "22"
             }
         ]
     },
     {
         "id": "20",
-        "text": "You and the giant ant successfully retrieve the treasure chest, sharing it equally.",
+        "text": "You return to your duties, but can't shake the feeling that something is off.",
         "choices": [
             {
-                "text": "Investigate the chest further",
+                "text": "Investigate further",
                 "nextNodeID": "200"
             },
             {
-                "text": "Follow the giant ant back home",
+                "text": "Ask your superior for guidance",
                 "nextNodeID": "201"
             },
             {
-                "text": "Divide the treasure and part ways",
+                "text": "Ignore your instincts and continue as normal",
                 "nextNodeID": "202"
             }
         ]
     },
     {
         "id": "200",
-        "text": "The chest contains a map leading to more treasures."
+        "text": "You discover a hidden plot to overthrow the kingdom."
     },
     {
         "id": "201",
-        "text": "The giant ant reveals its true form as an evil sorcerer who plans to conquer the world with your newfound wealth!"
+        "text": "Your superior reveals they have been aware of the issue and are working on a solution."
     },
     {
         "id": "202",
-        "text": "You both go your separate ways, never to meet again."
+        "text": "Nothing unusual is found, but you can't shake the feeling that something is still off."
     },
     {
         "id": "21",
-        "text": "You complete your original quest and find great success in doing so.",
+        "text": "Behind a stack of boxes, you find an old blueprint with cryptic markings. You take it and continue on your adventure.",
         "choices": [
             {
-                "text": "Explore deeper into the forest.",
+                "text": "Investigate the markings further",
                 "nextNodeID": "210"
             },
             {
-                "text": "Return home immediately.",
+                "text": "Follow the path indicated on the blueprint",
                 "nextNodeID": "211"
             },
             {
-                "text": "Ask the wise old man for guidance.",
+                "text": "Discard the blueprint and continue exploring",
                 "nextNodeID": "212"
             }
         ]
     },
     {
         "id": "210",
-        "text": "You discover a hidden treasure and become incredibly wealthy."
+        "text": "The markings reveal a hidden passage leading to an ancient temple."
     },
     {
         "id": "211",
-        "text": "Upon returning, you find your village has been ravaged by an unknown enemy. You must now seek revenge."
+        "text": "You find yourself in front of a mysterious door with the same cryptic symbols as the blueprint, which opens revealing a secret room filled with treasure!"
     },
     {
         "id": "212",
-        "text": "The wise old man reveals that the true quest lies within yourself, and you embark on a journey of self-discovery."
+        "text": "As you explore further, you stumble upon a group of adventurers who have also been searching for this place. They invite you to join their party and share your findings."
     },
     {
         "id": "22",
-        "text": "The giant ant discovers your deceit and attacks you, causing you to fail this part of your adventure.",
+        "text": "Your coworker mentions they saw someone suspicious hanging around earlier. They give you a description to keep an eye out for.",
         "choices": [
             {
-                "text": "Fight the ant",
+                "text": "Investigate further",
                 "nextNodeID": "220"
             },
             {
-                "text": "Run away from the ant",
+                "text": "Ignore it for now",
                 "nextNodeID": "221"
             },
             {
-                "text": "Try to reason with the ant",
+                "text": "Tell your supervisor immediately",
                 "nextNodeID": "222"
             }
         ]
     },
     {
         "id": "220",
-        "text": "You manage to defeat the giant ant, but it's not easy. You find a hidden passage behind its nest."
+        "text": "You spot the suspicious person and manage to apprehend them, uncovering a major theft plot. Your coworker thanks you."
     },
     {
         "id": "221",
-        "text": "The ants give chase as you run through their colony. You narrowly escape and continue your adventure elsewhere."
+        "text": "The suspicious person disappears, but you later find out they were casing the place for an upcoming robbery. You wish you had acted sooner."
     },
     {
         "id": "222",
-        "text": "To your surprise, the ant listens to your plea for mercy. It lets you pass, but warns that if it ever catches you lying again, there will be consequences."
+        "text": "Your supervisor takes charge of the situation, and you are commended for your vigilance. The company's security is tightened up as a result."
     },
     {
         "depth": 3,
-        "title": "Ant Beach: Reloaded"
+        "title": "End of the Line"
     }
 ]
